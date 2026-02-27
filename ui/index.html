@@ -495,6 +495,46 @@ body::after {
    UTILITIES
    ═══════════════════════════════════════════════════════════════════════════ */
 .hidden { display: none !important; }
+
+/* attachment icon on transfer events */
+.ev-attach {
+  position: absolute; top: 6px; right: 7px;
+  font-size: 13px; filter: grayscale(0.3);
+  pointer-events: none;
+}
+
+/* download link in event modal */
+.evm-download {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 14px; padding: 7px 14px;
+  background: rgba(204,40,40,0.12);
+  border: 1px solid rgba(204,40,40,0.3);
+  color: var(--red);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px; letter-spacing: 2px;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s;
+}
+.evm-download:hover {
+  background: rgba(204,40,40,0.22);
+  border-color: rgba(204,40,40,0.5);
+}
+
+/* document link in suspect modal */
+.m-doc-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 6px; padding: 6px 12px;
+  background: rgba(212,160,32,0.08);
+  border: 1px solid rgba(212,160,32,0.25);
+  color: var(--gold);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px; letter-spacing: 1px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.m-doc-link:hover {
+  background: rgba(212,160,32,0.18);
+}
 </style>
 </head>
 
@@ -503,7 +543,7 @@ body::after {
 <!-- ═══════════════════════ HOME ═══════════════════════ -->
 <div class="screen active" id="home">
   <img src="gta.png" class="home-logo" alt="Grand Theft Appartment: Martinique">
-  <div class="home-sub">Case Dossier &middot; Feb 2026</div>
+  <div class="home-sub">TL;DR i got scammed for 800 euros &#x1F62D;</div>
   <div class="home-menu">
     <div class="menu-btn" onclick="go('suspects')">
       <img src="wanted.png" alt="Suspects">
@@ -569,9 +609,10 @@ const SUSPECTS = [
     name: "Etienne Moulinat",
     role: "Main Scammer", roleCls: "scammer", stars: 5,
     photos: ["../Pictures/Etienne Whatsapp.jpg","../Pictures/Etienne gmail.jpg"],
+    docs: ["../ID Etienne.pdf"],
     snippet: "Orchestrated the entire scam over email.",
-    money: "Received €600+",
-    desc: "Primary orchestrator. Posed as a landlord renting a Sainte-Anne studio. Gradually escalated demands from €20 to €600+ across 5 days. Never completed a meaningful phone call. Provided a non-existent contract address. Never showed up to the appointment.",
+    money: "Received €800 total",
+    desc: "Primary orchestrator. Posed as a landlord renting a Sainte-Anne studio. Gradually escalated demands from €20 to €800 across 5 days via 4 wire transfers to two beneficiaries. Never completed a meaningful phone call. Provided a non-existent contract address. Never showed up to the appointment.",
     sections: [
       { label: "Contact",  rows: [
         { k:"Phone", v:"+33 7 57 83 91 83" },
@@ -616,9 +657,9 @@ const SUSPECTS = [
     name: "Sondayeni Sanou",
     role: "Beneficiary", roleCls: "beneficiary", stars: 4,
     photos: [],
-    snippet: "Money mule #1. Received €400.",
-    money: "€400 received (Transfers #1 & #2)",
-    desc: "First money mule. Received €200 on Monday (via Wise) and €200 on Tuesday (via Nickel). Presented as Etienne's 'collaboratrice'. Account at Deblock, a French fintech.",
+    snippet: "Money mule #1. Received €600.",
+    money: "€600 received (Transfers #1, #2 & #3)",
+    desc: "First money mule. Received €200 on Monday (via Wise), €200 on Tuesday (via Nickel), and another €200 on Wednesday (via Nickel) after Etienne falsely claimed the previous transfer had been rejected. Presented as Etienne's 'collaboratrice'. Account at Deblock, a French fintech.",
     sections: [
       { label: "Banking Details", rows: [
         { k:"IBAN",      v:"FR76 1774 8019 8470 0732 7966 495" },
@@ -633,8 +674,8 @@ const SUSPECTS = [
     role: "Beneficiary", roleCls: "beneficiary", stars: 4,
     photos: [],
     snippet: "Money mule #2. \"Etienne's brother.\"",
-    money: "€200 received (Transfer #3)",
-    desc: "Second money mule. Introduced on Wednesday when Etienne claimed the first account had 'rejected' the transfers. Claimed to be Etienne's brother and employee. Received €200 from the victim's uncle via instant transfer.",
+    money: "€200 received (Transfer #4)",
+    desc: "Second money mule. Introduced on Wednesday as an alternative beneficiary — claimed to be Etienne's brother and employee. Received €200 from the victim's uncle via instant transfer (Wise → BoursoBank).",
     extra: "Etienne's brother",
     sections: [
       { label: "Banking Details", rows: [
@@ -694,6 +735,7 @@ const EVENTS = [
     desc:"Yann's main bank (Nickel) blocks transfers to new beneficiaries for 24 hours. He uses Wise, which only has €200. Etienne accepts." },
   { day:"mon", time:"12:03", type:"transfer", title:"TRANSFER #1 — €200",
     actor:"Yann → Sondayeni",
+    file:"../Transfers/1st wise 200.pdf",
     desc:"€200 sent from Wise to Sondayeni Sanou. First real money lost. Screenshot shared as proof. Running total: €200." },
   { day:"mon", time:"13:15", type:"appointment", title:"Meeting Confirmed",
     actor:"Etienne + Sylvain",
@@ -713,6 +755,7 @@ const EVENTS = [
     desc:"Etienne complains it's 'too complicated' and threatens to cancel and refund. Classic pressure tactic to force compliance." },
   { day:"tue", time:"16:24", type:"transfer", title:"TRANSFER #2 — €200",
     actor:"Yann → Sondayeni",
+    file:"../Transfers/2nd nickel 200.pdf",
     desc:"€200 sent from Nickel to Sondayeni Sanou. Running total: €400." },
   { day:"tue", time:"16:41", type:"appointment", title:"Address Shared",
     actor:"Etienne",
@@ -720,13 +763,18 @@ const EVENTS = [
   // WED
   { day:"wed", time:"05:38", type:"warning", title:"\"Transfer Rejected\"",
     actor:"Etienne",
-    desc:"Etienne claims the bank returned the money to Yann's account. Sends screenshots. Asks Yann to call his bank to 'fix it'. The money was never returned." },
+    desc:"Etienne falsely claims the bank returned the money to Yann's account. Sends fabricated screenshots as proof. Asks Yann to call his bank to 'fix it'. The money was never returned — this lie prompted Transfer #3." },
+  { day:"wed", time:"07:03", type:"transfer", title:"TRANSFER #3 — €200",
+    actor:"Yann → Sondayeni",
+    file:"../Transfers/3rd nickel 200.pdf",
+    desc:"€200 re-sent from Nickel to Sondayeni Sanou after Etienne's false claim that the previous transfer was rejected. Running total: €600." },
   { day:"wed", time:"09:52", type:"banking", title:"New Beneficiary: Junior",
     actor:"Etienne",
     desc:"New IBAN given: Junior Yohan, FR76 4061 8805 0500 0406 8586 984 (BoursoBank). Claimed to be Etienne's brother and employee." },
-  { day:"wed", time:"11:01", type:"transfer", title:"TRANSFER #3 — €200",
+  { day:"wed", time:"11:01", type:"transfer", title:"TRANSFER #4 — €200",
     actor:"Yann's uncle → Junior",
-    desc:"€200 sent by Yann's uncle to Junior Yohan (BoursoBank) via instant transfer. Running total: €600+." },
+    file:"../Transfers/4th wise ariel 200.jpg",
+    desc:"€200 sent by Yann's uncle to Junior Yohan (BoursoBank) via Wise instant transfer. Running total: €800." },
   { day:"wed", time:"12:27", type:"appointment", title:"Yann Arrives",
     actor:"Yann",
     desc:"Yann arrives at 6 Rue Abbé Hurard, Sainte-Anne, with all his luggage. Waits outside in the heat." },
@@ -808,13 +856,19 @@ function openSus(i) {
     }
   }
 
-  if (s.photos.length > 1) {
-    body += `<div class="m-section">Photos</div>`;
+  if (s.photos.length > 1 || (s.docs && s.docs.length)) {
+    body += `<div class="m-section">Photos &amp; Documents</div>`;
     body += `<div class="m-thumbs">`;
     for (const p of s.photos) {
       body += `<img class="m-thumb" src="${p}" alt="photo" onclick="window.open('${p}','_blank')">`;
     }
     body += `</div>`;
+    if (s.docs && s.docs.length) {
+      for (const d of s.docs) {
+        const fname = d.split('/').pop();
+        body += `<a class="m-doc-link" href="${d}" target="_blank">&#x1F4C4; ${fname}</a>`;
+      }
+    }
   }
 
   document.getElementById('sus-content').innerHTML = `
@@ -856,8 +910,10 @@ function renderTimeline() {
     const evs = EVENTS.filter(e => e.day === d.key);
     const cards = evs.map((e, i) => {
       const idx = EVENTS.indexOf(e);
+      const clip = e.file ? '<div class="ev-attach">&#x1F4CE;</div>' : '';
       return `
         <div class="ev t-${e.type}" onclick="openEv(${idx})">
+          ${clip}
           <div class="ev-time">${e.time}</div>
           <div class="ev-title">${e.title}</div>
           <div class="ev-actor">${e.actor}</div>
@@ -882,11 +938,15 @@ function openEv(i) {
   const meta = TYPE_META[e.type];
   const day = DAYS.find(d => d.key === e.day);
 
+  const dlLink = e.file
+    ? `<a class="evm-download" href="${e.file}" target="_blank" download>&#x1F4CE; DOWNLOAD RECEIPT</a>`
+    : '';
   document.getElementById('ev-content').innerHTML = `
     <div class="evm-type" style="color:${meta.color}">${meta.label}</div>
     <div class="evm-title">${e.title}</div>
     <div class="evm-datetime">${day.name} ${day.date} &middot; ${e.time}</div>
     <div class="evm-desc">${e.desc}</div>
+    ${dlLink}
     <div class="evm-actor">Actor: <span>${e.actor}</span></div>`;
   document.getElementById('ev-overlay').classList.add('open');
 }
