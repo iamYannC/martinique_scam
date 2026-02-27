@@ -1,0 +1,2802 @@
+[
+  {
+    "msg": "Bonjour, est-ce bien Monsieur Etienne ?",
+    "from": "yann",
+    "time": "14:52",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771959120"
+  },
+  {
+    "msg": "Bonjour Monsieur Yann, c'est bien moi, Etienne.",
+    "from": "etienne",
+    "time": "14:54",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771959240"
+  },
+  {
+    "msg": "Parfait. Je viens de recevoir votre message. Pourriez-vous me donner l'adresse ? Je pars de Schoelcher tres tot demain matin pour ne pas etre en retard.",
+    "from": "yann",
+    "time": "14:55",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771959300"
+  },
+  {
+    "msg": "D'accord, je vais l'envoyer sur Gmail",
+    "from": "etienne",
+    "time": "14:57",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771959420"
+  },
+  {
+    "msg": "D'accord, mais pouvez-vous me repondre sur Gmail ? Ainsi, nous saurons tous les deux que le dossier est complet",
+    "from": "etienne",
+    "time": "14:58",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771959480"
+  },
+  {
+    "msg": "J'ai donne mon accord par mail. Le reste de l'argent sera transfere demain. J'ai demande l'adresse. A demain 🙏🏻",
+    "from": "yann",
+    "time": "15:07",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771960020"
+  },
+  {
+    "msg": "Salut, je peux appeler ?",
+    "from": "yann",
+    "time": "15:37",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771961820"
+  },
+  {
+    "msg": "",
+    "from": "yann",
+    "time": "15:38",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771961880"
+  },
+  {
+    "msg": "",
+    "from": "etienne",
+    "time": "15:39",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771961940"
+  },
+  {
+    "msg": "",
+    "from": "etienne",
+    "time": "15:40",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771962000"
+  },
+  {
+    "msg": "Puis-je appeler normalement ? Le message indique que la ligne est occupee.",
+    "from": "yann",
+    "time": "15:41",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771962060"
+  },
+  {
+    "msg": "",
+    "from": "etienne",
+    "time": "15:42",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771962120"
+  },
+  {
+    "msg": "Pouvez-vous m'appeler autrement que par WhatsApp ?",
+    "from": "yann",
+    "time": "15:44",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771962240"
+  },
+  {
+    "msg": "<Media omitted>",
+    "from": "yann",
+    "time": "15:45",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771962300"
+  },
+  {
+    "msg": "<Media omitted>",
+    "from": "yann",
+    "time": "16:06",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771963560"
+  },
+  {
+    "msg": "",
+    "from": "yann",
+    "time": "16:12",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771963920"
+  },
+  {
+    "msg": "C'est fait",
+    "from": "yann",
+    "time": "16:24",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771964640"
+  },
+  {
+    "msg": "D'accord",
+    "from": "etienne",
+    "time": "16:29",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771964940-1"
+  },
+  {
+    "msg": "Demain c'est bon pour le rendez-vous",
+    "from": "etienne",
+    "time": "16:29",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771964940-2"
+  },
+  {
+    "msg": "Parfait",
+    "from": "yann",
+    "time": "16:29",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771964940-3"
+  },
+  {
+    "msg": "Je suis actuellement en visite, mais demain matin je vous enverrai le dossier afin que vous sachiez que vous avez affaire a une personne serieuse.",
+    "from": "etienne",
+    "time": "16:30",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771965000"
+  },
+  {
+    "msg": "Je vous fais confiance. Pourriez-vous partager l'adresse ici, s'il vous plait ?",
+    "from": "yann",
+    "time": "16:31",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771965060-1"
+  },
+  {
+    "msg": "Non je vous l'envoie par Gmail svp",
+    "from": "etienne",
+    "time": "16:31",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771965060-2"
+  },
+  {
+    "msg": "D'accord, envoyez-le la-bas, s'il vous plait. A demain a 14h",
+    "from": "yann",
+    "time": "16:35",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771965300"
+  },
+  {
+    "msg": "Deja",
+    "from": "etienne",
+    "time": "19:14",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771974840-1"
+  },
+  {
+    "msg": "Oui?",
+    "from": "yann",
+    "time": "19:14",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771974840-2"
+  },
+  {
+    "msg": "Gmail",
+    "from": "etienne",
+    "time": "19:14",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771974840-3"
+  },
+  {
+    "msg": "Oui, j'ai recu l'adresse . Merci. Je n'ai pas recu d'autre message",
+    "from": "yann",
+    "time": "19:15",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771974900"
+  },
+  {
+    "msg": "Je vais bientot me coucher, car je dois partir assez tot pour prendre tous les bus. Bonne nuit et a demain",
+    "from": "yann",
+    "time": "19:21",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771975260-1"
+  },
+  {
+    "msg": "Message recu par Gmail ?",
+    "from": "etienne",
+    "time": "19:21",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771975260-2"
+  },
+  {
+    "msg": "Oui. Pas de probleme, je serai deja en route, c'est bon.",
+    "from": "yann",
+    "time": "19:22",
+    "day": "tuesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771975320"
+  },
+  {
+    "msg": "Bonjour Informez-moi avant de prendre la route et indiquez-moi ma position, s'il vous plait.",
+    "from": "etienne",
+    "time": "03:21",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772004060"
+  },
+  {
+    "msg": "Bonjour",
+    "from": "etienne",
+    "time": "05:37",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012220-1"
+  },
+  {
+    "msg": "D'accord. J'ai reserve un taxi pour 11 <This message was edited>",
+    "from": "yann",
+    "time": "05:37",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012220-2"
+  },
+  {
+    "msg": "Bonjour",
+    "from": "yann",
+    "time": "05:37",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012220-3"
+  },
+  {
+    "msg": "Il a un probleme avec votre banque",
+    "from": "etienne",
+    "time": "05:38",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012280-1"
+  },
+  {
+    "msg": "Que voulez-vous dire ? Tout l'argent a ete transfere...",
+    "from": "yann",
+    "time": "05:38",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012280-2"
+  },
+  {
+    "msg": "ont renvoye l'argent sur votre compte. Cela peut prendre 24 heures. Vous pouvez les appeler pour savoir pourquoi, car le dossier est deja pret. Mais l'argent vient d'etre retourne sur votre compte. Voila ce que j'ai constate.",
+    "from": "etienne",
+    "time": "05:40",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012400-1"
+  },
+  {
+    "msg": "This message was deleted",
+    "from": "etienne",
+    "time": "05:40",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012400-2"
+  },
+  {
+    "msg": "<Media omitted>",
+    "from": "etienne",
+    "time": "05:41",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012460-1"
+  },
+  {
+    "msg": "<Media omitted>",
+    "from": "etienne",
+    "time": "05:41",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012460-2"
+  },
+  {
+    "msg": "Vous pouvez appeler votre banque et savoir pourquoi ?",
+    "from": "etienne",
+    "time": "05:41",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012460-3"
+  },
+  {
+    "msg": "Je vous envoie le contrat dans quelque minutes",
+    "from": "etienne",
+    "time": "05:42",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012520-1"
+  },
+  {
+    "msg": "Il semblerait qu'il y ait un probleme avec votre compte, non ?",
+    "from": "yann",
+    "time": "05:42",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012520-2"
+  },
+  {
+    "msg": "D'accord",
+    "from": "yann",
+    "time": "05:42",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012520-3"
+  },
+  {
+    "msg": "Mais je n'ai pas aime ce cours.",
+    "from": "etienne",
+    "time": "05:42",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012520-4"
+  },
+  {
+    "msg": "Je sais",
+    "from": "etienne",
+    "time": "05:43",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012580-1"
+  },
+  {
+    "msg": "Cela montre quelque chose concernant votre compte, pas le mien.",
+    "from": "yann",
+    "time": "05:43",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012580-2"
+  },
+  {
+    "msg": "Vous pouvez appeler votre banque et me confirmer avant que je prenne la route ?",
+    "from": "etienne",
+    "time": "05:44",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012640-1"
+  },
+  {
+    "msg": "Non, ca vient de votre compte. Je viens d'appeler ma banque.",
+    "from": "etienne",
+    "time": "05:44",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012640-2"
+  },
+  {
+    "msg": "Oui, je les appellerai, bien sur.",
+    "from": "yann",
+    "time": "05:45",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012700-1"
+  },
+  {
+    "msg": "Merci beaucoup",
+    "from": "etienne",
+    "time": "05:45",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012700-2"
+  },
+  {
+    "msg": "Et revenez vers moi pour que je sois tranquille dans ma conscience.",
+    "from": "etienne",
+    "time": "05:46",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012760"
+  },
+  {
+    "msg": "C'est tres etrange, ne t'inquiete pas. Je vais les appeler, on va regler tout ca. A plus tard.",
+    "from": "yann",
+    "time": "05:48",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772012880"
+  },
+  {
+    "msg": "Qu'ont dit votre banque ? Comme ca, je saurai quoi demander a la mienne.",
+    "from": "yann",
+    "time": "05:50",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772013000"
+  },
+  {
+    "msg": "J'attends la confirmation normale pour vous envoyer le dossier deja pret, apres avoir recu le message de ma banque indiquant que l'argent a ete retourne sur votre compte. Donc, c'est un probleme de votre banque. Dites-leur de laisser passer l'argent sur le compte. C'est urgent pour nous, merci de leur dire",
+    "from": "etienne",
+    "time": "05:51",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772013060"
+  },
+  {
+    "msg": "Vous aviez deja le message que je vous ai envoye comme preuve.",
+    "from": "etienne",
+    "time": "05:52",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772013120"
+  },
+  {
+    "msg": "Et je veux en retour la confirmation de votre banque pour cela",
+    "from": "etienne",
+    "time": "05:53",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772013180-1"
+  },
+  {
+    "msg": "Si ce n'est pas publie, je vous le renverrai. Je vous tiendrai au courant dans une heure.",
+    "from": "yann",
+    "time": "05:53",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772013180-2"
+  },
+  {
+    "msg": "D'accord, merci beaucoup. Quand ce sera bon, informez-moi pour que je vous renvoie l'engagement.",
+    "from": "etienne",
+    "time": "05:54",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772013240"
+  },
+  {
+    "msg": "Envoyez-moi quelques reponses de votre banque, apres avoir echange avec eux.",
+    "from": "etienne",
+    "time": "05:55",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772013300"
+  },
+  {
+    "msg": "Il y a peut-etre eu un probleme avec le premier virement (car il a eu lieu moins de 24 heures avant, comme je vous l'ai dit). Je viens de le refaire et je vous enverrai par courrier la lettre que j'ai adressee a la banque pour confirmer qu'il y a bien un probleme. Gmail",
+    "from": "yann",
+    "time": "07:03",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772017380"
+  },
+  {
+    "msg": "<Media omitted>",
+    "from": "yann",
+    "time": "07:04",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772017440"
+  },
+  {
+    "msg": "Vous deviez me demander le Gmail de ma collaboratrice et non pour moi vous aviez utilise vous voyez bien que l'erreur est de vous ? Je me disais surement vous allez prendre des idees negatifs sur moi mais je suis fiere que vous aviez vus l'erreur vous meme. Alors si vous voulez refaire en ce temps la banque va vous renvoyer les 200 euros d'hier dans 24h pour rattraper le temps perdu et prendre en promesse le rendez-vous je vous demande de refait pas wero le virement si oui vous l'aviez je vous",
+    "from": "etienne",
+    "time": "07:22",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772018520"
+  },
+  {
+    "msg": "Dites a la banque de vous renvoyer le virement d'hier. Ils le feront, car il a ete mal envoye et c'est une erreur de leur part. Ils le feront rapidement",
+    "from": "etienne",
+    "time": "07:26",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772018760-1"
+  },
+  {
+    "msg": "Salut, je t'ai envoye la piece jointe par mail.",
+    "from": "yann",
+    "time": "07:26",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772018760-2"
+  },
+  {
+    "msg": "D'accord",
+    "from": "etienne",
+    "time": "07:27",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772018820"
+  },
+  {
+    "msg": "Je leur ai envoye un courriel et je t'ai mis au courant, ainsi que sur Facebook. Ca devrait aller. Je ne sais pas pourquoi tu as recu cette notification... En attendant que ce soit regle, je trouverai un distributeur automatique a Sainte-Anne et je donnerai de l'argent., 250..",
+    "from": "yann",
+    "time": "07:29",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772018940-1"
+  },
+  {
+    "msg": "Je suis desole qu'il y ait des problemes. Croyez-moi, ce n'est pas mon intention.",
+    "from": "yann",
+    "time": "07:29",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772018940-2"
+  },
+  {
+    "msg": "Vous aviez PayPal",
+    "from": "etienne",
+    "time": "07:30",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772019000-1"
+  },
+  {
+    "msg": "?",
+    "from": "etienne",
+    "time": "07:30",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772019000-2"
+  },
+  {
+    "msg": "<Media omitted>",
+    "from": "etienne",
+    "time": "07:58",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772020680"
+  },
+  {
+    "msg": "<Media omitted>",
+    "from": "etienne",
+    "time": "07:59",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772020740"
+  },
+  {
+    "msg": "Avez-vous recharge le retour des 200 euros ? La banque devrait deja l'avoir renvoye sur votre compte",
+    "from": "etienne",
+    "time": "08:02",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772020920"
+  },
+  {
+    "msg": "",
+    "from": "etienne",
+    "time": "08:04",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772021040"
+  },
+  {
+    "msg": "Je te rappellerai, d'accord ?",
+    "from": "yann",
+    "time": "08:06",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772021160"
+  },
+  {
+    "msg": "Je suis en reunion Zoom.",
+    "from": "yann",
+    "time": "08:07",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772021220-1"
+  },
+  {
+    "msg": "",
+    "from": "yann",
+    "time": "08:07",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772021220-2"
+  },
+  {
+    "msg": "J'ai depose un message sur Gmail",
+    "from": "etienne",
+    "time": "08:09",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772021340"
+  },
+  {
+    "msg": "J'attends votre capture pour rassurer la route et pour eclaircir le dossier",
+    "from": "etienne",
+    "time": "08:11",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772021460"
+  },
+  {
+    "msg": "👍🏼👍🏼 J'ai signe le contrat et je l'ai renvoye par mail",
+    "from": "yann",
+    "time": "08:45",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772023500-1"
+  },
+  {
+    "msg": "D'accord",
+    "from": "etienne",
+    "time": "08:45",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772023500-2"
+  },
+  {
+    "msg": "J'ai signe ceci. Pouvez-vous m'envoyer l'autre contrat par courrier ? Je le signerai immediatement.",
+    "from": "yann",
+    "time": "08:53",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772023980"
+  },
+  {
+    "msg": "Je quitterai Fort-de-France a 12h00. 🙏🏻",
+    "from": "yann",
+    "time": "09:24",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772025840"
+  },
+  {
+    "msg": "C'est ici que vous allez signer. C'est deja tire et, une fois au rendez-vous, je vous montrerai ou signer. https://drive.google.com/file/d/1X3SBC9OvzyIy_ZA31PD5A6r9MzPfjGvy/view?usp=drivesdk",
+    "from": "etienne",
+    "time": "09:50",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": true,
+    "date": "2026-02-25",
+    "id": "w-1772027400"
+  },
+  {
+    "msg": "Vous aviez effectue le virement sur l'adresse Nom : Junior Yohan IBAN : FR7640618805050004068586984 BIC : BOUSFRPPXXX NOM DE LA BANQUE : BoursoBank",
+    "from": "etienne",
+    "time": "09:52",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772027520"
+  },
+  {
+    "msg": "D'accord, mais il faut que je depose les 200 euros. Vous n'avez toujours pas effectue le paiement des 200 euros. J'ai envoye l'adresse. J'attends votre confirmation. Le virement d'hier est surement deja sur votre compte. Normalement, la banque vous l'a deja renvoye.",
+    "from": "etienne",
+    "time": "09:57",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772027820"
+  },
+  {
+    "msg": "Donc, envoyez les deux cents euros sur ce compte ?",
+    "from": "yann",
+    "time": "09:59",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772027940-1"
+  },
+  {
+    "msg": "Oui",
+    "from": "etienne",
+    "time": "09:59",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772027940-2"
+  },
+  {
+    "msg": "Et envoyez-moi une capture sur mail",
+    "from": "etienne",
+    "time": "09:59",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772027940-3"
+  },
+  {
+    "msg": "Prenom junior, nom Yohan",
+    "from": "yann",
+    "time": "10:00",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772028000-1"
+  },
+  {
+    "msg": "Oui",
+    "from": "etienne",
+    "time": "10:00",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772028000-2"
+  },
+  {
+    "msg": "Envoye la capture ici aussi. <This message was edited>",
+    "from": "etienne",
+    "time": "10:01",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772028060"
+  },
+  {
+    "msg": "Je ne peux plus faire le virement 😆 J'appelle la banque. Au pire, je retirerai de l'argent au machine.",
+    "from": "yann",
+    "time": "10:07",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772028420-1"
+  },
+  {
+    "msg": "Ce sont toutes leurs mesures de securite. Je ne sais pas pourquoi c'est comme ca.",
+    "from": "yann",
+    "time": "10:07",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772028420-2"
+  },
+  {
+    "msg": "Ok",
+    "from": "etienne",
+    "time": "10:07",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772028420-3"
+  },
+  {
+    "msg": "C'est toujours OK pour 14h?",
+    "from": "etienne",
+    "time": "10:08",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772028480-1"
+  },
+  {
+    "msg": "Oui, merci",
+    "from": "yann",
+    "time": "10:08",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772028480-2"
+  },
+  {
+    "msg": "Vous avez recu l'argent en especes ou c'est sur votre compte ?",
+    "from": "etienne",
+    "time": "10:10",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772028600"
+  },
+  {
+    "msg": "Avez-vous demande a quelle heure votre banque va vous faire le retour d'argent sur votre compte ?",
+    "from": "etienne",
+    "time": "10:15",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772028900-1"
+  },
+  {
+    "msg": "Non, je ne l'ai pas recu. Mais ma banque indique que cela peut prendre 24 heures.",
+    "from": "yann",
+    "time": "10:15",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772028900-2"
+  },
+  {
+    "msg": "Oui c'est vrai",
+    "from": "etienne",
+    "time": "10:15",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772028900-3"
+  },
+  {
+    "msg": "Il sont raison",
+    "from": "etienne",
+    "time": "10:15",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772028900-4"
+  },
+  {
+    "msg": "Pas de souci... Je trouverai un distributeur automatique a Sainte-Anne et je te donnerai le reste de l'argent.",
+    "from": "yann",
+    "time": "10:16",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772028960-1"
+  },
+  {
+    "msg": "Comment ca ? Je peux me deplacer pour le rendez-vous aujourd'hui ?",
+    "from": "etienne",
+    "time": "10:16",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772028960-2"
+  },
+  {
+    "msg": "Oui, bien sur... On se voit la-bas",
+    "from": "yann",
+    "time": "10:17",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772029020-1"
+  },
+  {
+    "msg": "Non, je prefere que vous achetiez le Transcash et que vous me l'envoyiez en echange. Les frais seront deduits des 50 euros restants. Vous pouvez prendre pour 200 euros, cela ne derange pas.",
+    "from": "etienne",
+    "time": "10:17",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772029020-2"
+  },
+  {
+    "msg": "Comme preuve de paiement, je veux que vous m'envoyiez la photo par mail.",
+    "from": "etienne",
+    "time": "10:18",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772029080"
+  },
+  {
+    "msg": "<Media omitted>",
+    "from": "yann",
+    "time": "10:27",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772029620-1"
+  },
+  {
+    "msg": "<< Cela peut prendre 24 heures >>, m'ont-ils dit, << mais voici le document. >>",
+    "from": "yann",
+    "time": "10:27",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772029620-2"
+  },
+  {
+    "msg": "Je comprends pas",
+    "from": "etienne",
+    "time": "10:30",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772029800"
+  },
+  {
+    "msg": "J'ai effectue la transaction. Voici le recu de la banque.",
+    "from": "yann",
+    "time": "10:31",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772029860"
+  },
+  {
+    "msg": "J'ai egalement envoye par Gmail",
+    "from": "yann",
+    "time": "10:32",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772029920"
+  },
+  {
+    "msg": "24h voila le rendez-vous est pour aujourd'hui",
+    "from": "etienne",
+    "time": "10:34",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030040-1"
+  },
+  {
+    "msg": "Serieux je comprends plus rien",
+    "from": "etienne",
+    "time": "10:34",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030040-2"
+  },
+  {
+    "msg": "Le paiement a ete effectue.",
+    "from": "yann",
+    "time": "10:36",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030160-1"
+  },
+  {
+    "msg": "Pour en finir rapidement avec cela, je vous propose que nous fixions un rendez-vous. Je prendrai la route et nous pourrons faire le point sur place avec ma collaboratrice.",
+    "from": "etienne",
+    "time": "10:36",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030160-2"
+  },
+  {
+    "msg": "C'est instantane",
+    "from": "etienne",
+    "time": "10:37",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030220-1"
+  },
+  {
+    "msg": "J'arrive deja, on va tout arranger",
+    "from": "yann",
+    "time": "10:37",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030220-2"
+  },
+  {
+    "msg": "L'argent a deja ete envoye",
+    "from": "yann",
+    "time": "10:37",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030220-3"
+  },
+  {
+    "msg": "J'ai deja paye le taxi, je suis en route. Je t'ai envoye l'argent, tout est en ordre, il est bien arrive.",
+    "from": "yann",
+    "time": "10:39",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030340-1"
+  },
+  {
+    "msg": "La, il vaut mieux me rejoindre directement, car je vais prendre l'argent et finaliser le depot avant de prendre la route. Pour le reste, ce ne sera pas par WhatsApp. Soit je retire l'argent et je renvoie le reste pour en finir avec cela.",
+    "from": "etienne",
+    "time": "10:39",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030340-2"
+  },
+  {
+    "msg": "Elle doit me confirmer avant que je prenne la route.",
+    "from": "etienne",
+    "time": "10:40",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030400-1"
+  },
+  {
+    "msg": "Pas de probleme, on se retrouve la-bas a 14h00, d'accord ?",
+    "from": "yann",
+    "time": "10:40",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030400-2"
+  },
+  {
+    "msg": "L'argent n'est peut-etre pas arrive sur le compte, votre banque semble refuser le virement. Il y a probablement un probleme de votre cote. Je vous demande donc de faire le virement sur le compte de mon employe.",
+    "from": "etienne",
+    "time": "10:42",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030520"
+  },
+  {
+    "msg": "Effectue le virement sur l'adresse Nom : Junior Yohan IBAN : FR7640618805050004068586984 BIC : BOUSFRPPXXX NOM DE LA BANQUE : BoursoBank",
+    "from": "etienne",
+    "time": "10:43",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030580-1"
+  },
+  {
+    "msg": "Ici",
+    "from": "etienne",
+    "time": "10:43",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030580-2"
+  },
+  {
+    "msg": "Ca ne va pas arriver, la banque de ma collaboratrice refuse. Il y a surement un probleme avec votre banque.",
+    "from": "etienne",
+    "time": "10:44",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030640"
+  },
+  {
+    "msg": "Une fois le virement effectue sur le compte, l'argent devrait arriver et je pourrai prendre le dossier et partir.",
+    "from": "etienne",
+    "time": "10:45",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030700"
+  },
+  {
+    "msg": "De Junior Yohan",
+    "from": "etienne",
+    "time": "10:46",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030760"
+  },
+  {
+    "msg": "Mon employe",
+    "from": "etienne",
+    "time": "10:47",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030820-1"
+  },
+  {
+    "msg": "Ce virement bancaire peut prendre 24 heures, comme je vous l'ai dit. Je suis en train de suivre les instructions et je vous montrerai la procedure depuis mon application.",
+    "from": "yann",
+    "time": "10:47",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030820-2"
+  },
+  {
+    "msg": "J'ai deja paye le taxi et je suis en route, on se voit la-bas.",
+    "from": "yann",
+    "time": "10:47",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030820-3"
+  },
+  {
+    "msg": "La, ecrivez-moi par mail, je dois deposer le dialogue.",
+    "from": "etienne",
+    "time": "10:48",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030880-1"
+  },
+  {
+    "msg": "No problem",
+    "from": "yann",
+    "time": "10:48",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030880-2"
+  },
+  {
+    "msg": ":)",
+    "from": "yann",
+    "time": "10:48",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030880-3"
+  },
+  {
+    "msg": "Non, finissons d'abord avec ca et assurons-nous que les choses ne seront pas compliquees la-bas.",
+    "from": "etienne",
+    "time": "10:49",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772030940"
+  },
+  {
+    "msg": "Si vous voulez un rendez-vous aujourd'hui, effectuez le virement et je vous confirmerai dans les 24 heures. Peut-on le faire sur l'adresse de Junior ?",
+    "from": "etienne",
+    "time": "10:50",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031000"
+  },
+  {
+    "msg": "J'essaie en ce moment. S'il vous plait monsieur, je suis deja en route pour Sainte-Anne. J'ai mes bagages. Vous aurez votre argent, j'essaie avec l'aide de ma famille.",
+    "from": "yann",
+    "time": "10:53",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031180"
+  },
+  {
+    "msg": "Mon oncle envoie",
+    "from": "yann",
+    "time": "10:54",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031240-1"
+  },
+  {
+    "msg": "A Junior",
+    "from": "yann",
+    "time": "10:54",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031240-2"
+  },
+  {
+    "msg": "La, vous voyez que vous profitez de la situation et que vous salissez mon nom sur l'ile. Comme je vous l'ai dit, nous finirons d'abord avec ce probleme avant de confirmer que le rendez-vous est fixe",
+    "from": "etienne",
+    "time": "10:55",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031300"
+  },
+  {
+    "msg": "Si je vois le virement sur le compte, je me deplacerai",
+    "from": "etienne",
+    "time": "10:56",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031360-1"
+  },
+  {
+    "msg": "Une capture",
+    "from": "etienne",
+    "time": "10:56",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031360-2"
+  },
+  {
+    "msg": "Ici",
+    "from": "etienne",
+    "time": "10:56",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031360-3"
+  },
+  {
+    "msg": "Comme preuve, renvoyez-le aussi sur mon mail si c'est bon.",
+    "from": "etienne",
+    "time": "10:57",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031420-1"
+  },
+  {
+    "msg": "Oui, mon oncle m'envoie la capture d'ecran.",
+    "from": "yann",
+    "time": "10:57",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031420-2"
+  },
+  {
+    "msg": "Et je prends la route avec ma collaboratrice",
+    "from": "etienne",
+    "time": "10:57",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031420-3"
+  },
+  {
+    "msg": "D'accord et en instantane svp",
+    "from": "etienne",
+    "time": "10:57",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031420-4"
+  },
+  {
+    "msg": "Oui",
+    "from": "yann",
+    "time": "10:58",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031480-1"
+  },
+  {
+    "msg": "D'accord",
+    "from": "etienne",
+    "time": "10:58",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031480-2"
+  },
+  {
+    "msg": "La c'est bon",
+    "from": "etienne",
+    "time": "10:58",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031480-3"
+  },
+  {
+    "msg": "<Media omitted>",
+    "from": "yann",
+    "time": "11:00",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031600-1"
+  },
+  {
+    "msg": "Aussi sur Gmail,",
+    "from": "yann",
+    "time": "11:00",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031600-2"
+  },
+  {
+    "msg": "OK D'accord",
+    "from": "etienne",
+    "time": "11:00",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031600-3"
+  },
+  {
+    "msg": "Cet Fait",
+    "from": "yann",
+    "time": "11:02",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031720-1"
+  },
+  {
+    "msg": "La, nous devrions reprendre une petite partie du dossier. Est-il possible que le rendez-vous prenne un retard de 2 heures ou plus ?",
+    "from": "etienne",
+    "time": "11:02",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031720-2"
+  },
+  {
+    "msg": "Attendez mon signal dans quelques minutes avant de prendre la route svp.",
+    "from": "etienne",
+    "time": "11:03",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031780-1"
+  },
+  {
+    "msg": "Non, desole, je n'ai pas de bus pour rentrer et j'ai une seance de kinesitherapie. Comme convenu, a 14h00, je voudrais deposer mes bagages dans l'appartement...",
+    "from": "yann",
+    "time": "11:03",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031780-2"
+  },
+  {
+    "msg": "Je suis deja sur la route",
+    "from": "yann",
+    "time": "11:04",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031840-1"
+  },
+  {
+    "msg": "Et demain matin ?",
+    "from": "etienne",
+    "time": "11:04",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031840-2"
+  },
+  {
+    "msg": "You deleted this message",
+    "from": "yann",
+    "time": "11:04",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031840-3"
+  },
+  {
+    "msg": "Je ne peux pas. Nous avons prevu de nous voir aujourd'hui. Merci d'etre la.",
+    "from": "yann",
+    "time": "11:04",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031840-4"
+  },
+  {
+    "msg": "Je dois mettre mes bagages dans l'appartement",
+    "from": "yann",
+    "time": "11:05",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031900-1"
+  },
+  {
+    "msg": "Car je ne peux pas perdre 2 heures a cause de votre retard. Elle doit retirer, faire le compte et me remettre les dossiers pour le rendez-vous.",
+    "from": "etienne",
+    "time": "11:05",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031900-2"
+  },
+  {
+    "msg": "D'accord Attendez mon signal dans quelques minutes avant de prendre la route alors.",
+    "from": "etienne",
+    "time": "11:06",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031960-1"
+  },
+  {
+    "msg": "Je vous explique que je suis deja en route.",
+    "from": "yann",
+    "time": "11:06",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031960-2"
+  },
+  {
+    "msg": "Monsieur, vous avez mon argent, soyez la s'il vous plait. Je vous attends.",
+    "from": "yann",
+    "time": "11:06",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772031960-3"
+  },
+  {
+    "msg": "reviens vers vous dans 1 heure pour vous informer si vous pouvez prendre la route, au cas ou l'argent n'a pas encore ete retourne a votre oncle comme vous l'aviez fait.",
+    "from": "etienne",
+    "time": "11:07",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772032020-1"
+  },
+  {
+    "msg": "Oui oblige",
+    "from": "etienne",
+    "time": "11:07",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772032020-2"
+  },
+  {
+    "msg": "Mais acceptez un retard de 2 heures.",
+    "from": "etienne",
+    "time": "11:08",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772032080-1"
+  },
+  {
+    "msg": "Svp",
+    "from": "etienne",
+    "time": "11:08",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772032080-2"
+  },
+  {
+    "msg": "C'est pas ma faute",
+    "from": "etienne",
+    "time": "11:08",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772032080-3"
+  },
+  {
+    "msg": "Il faudra donc que je dorme la-bas cette nuit.",
+    "from": "yann",
+    "time": "11:08",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772032080-4"
+  },
+  {
+    "msg": "Non, attendez mon signal. Je ne veux pas que vous restiez longtemps, car je dois attendre la secretaire pour refaire le dossier maintenant que l'argent est la.",
+    "from": "etienne",
+    "time": "11:09",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772032140"
+  },
+  {
+    "msg": "Oui, je veux me rassurer que l'argent a bien ete retire et recuperer les dossiers avant de prendre la route.",
+    "from": "etienne",
+    "time": "11:11",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772032260-1"
+  },
+  {
+    "msg": "Je suis deja en route, j'arrive dans une heure. Je viens de Schoelcher, c'est loin.",
+    "from": "yann",
+    "time": "11:11",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772032260-2"
+  },
+  {
+    "msg": "Je ne crois pas, mais j'ai deja tout dit : je dois recevoir l'argent en main et faire le compte avant de prendre la route.",
+    "from": "etienne",
+    "time": "11:12",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772032320"
+  },
+  {
+    "msg": "Pas de probleme, je te rejoindrai la-bas..",
+    "from": "yann",
+    "time": "11:13",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772032380-1"
+  },
+  {
+    "msg": "<Media omitted>",
+    "from": "yann",
+    "time": "11:13",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772032380-2"
+  },
+  {
+    "msg": "<Media omitted>",
+    "from": "yann",
+    "time": "11:14",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772032440-1"
+  },
+  {
+    "msg": "D'accord",
+    "from": "etienne",
+    "time": "11:14",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772032440-2"
+  },
+  {
+    "msg": "Salut, je suis la avec mes bagages, je t'attends. Merci, a bientot !",
+    "from": "yann",
+    "time": "12:27",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772036820"
+  },
+  {
+    "msg": "<Media omitted>",
+    "from": "yann",
+    "time": "12:28",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772036880-1"
+  },
+  {
+    "msg": "Je suis en route",
+    "from": "etienne",
+    "time": "12:28",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772036880-2"
+  },
+  {
+    "msg": "<Media omitted>",
+    "from": "etienne",
+    "time": "12:38",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772037480"
+  },
+  {
+    "msg": "Je te crois ;)",
+    "from": "yann",
+    "time": "12:41",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772037660-1"
+  },
+  {
+    "msg": "Merci beaucoup",
+    "from": "etienne",
+    "time": "12:41",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772037660-2"
+  },
+  {
+    "msg": "Je suis a l'entree d'un restaurant, le numero 4",
+    "from": "yann",
+    "time": "12:41",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772037660-3"
+  },
+  {
+    "msg": "D'accord",
+    "from": "etienne",
+    "time": "12:42",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772037720-1"
+  },
+  {
+    "msg": "<Media omitted>",
+    "from": "etienne",
+    "time": "12:42",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772037720-2"
+  },
+  {
+    "msg": "",
+    "from": "yann",
+    "time": "12:57",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772038620"
+  },
+  {
+    "msg": "Salut, tu arrives quand ?",
+    "from": "yann",
+    "time": "12:58",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772038680"
+  },
+  {
+    "msg": "Je suis toujours en route sp",
+    "from": "etienne",
+    "time": "12:59",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772038740-1"
+  },
+  {
+    "msg": "L'adresse, ce n'est pas ca.",
+    "from": "yann",
+    "time": "12:59",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772038740-2"
+  },
+  {
+    "msg": "Je viens deja",
+    "from": "etienne",
+    "time": "13:01",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772038860-1"
+  },
+  {
+    "msg": "Ok",
+    "from": "yann",
+    "time": "13:01",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772038860-2"
+  },
+  {
+    "msg": "J'attends dehors et il fait chaud. Ou etes-vous, s'il vous plait ?",
+    "from": "yann",
+    "time": "13:27",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772040420"
+  },
+  {
+    "msg": "Je suis en route, comme je vous l'ai dit, Monsieur Yann. C'est le dossier qui m'a un peu retarde.",
+    "from": "etienne",
+    "time": "13:28",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772040480"
+  },
+  {
+    "msg": "Je demande juste combien de temps ca va prendre. C'est tout. J'attends devant l'adresse que vous m'avez donnee, mais ce n'est pas la...",
+    "from": "yann",
+    "time": "13:29",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772040540"
+  },
+  {
+    "msg": "",
+    "from": "yann",
+    "time": "14:03",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772042580"
+  },
+  {
+    "msg": "Veuillez repondre ?",
+    "from": "yann",
+    "time": "14:04",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772042640"
+  },
+  {
+    "msg": "Bonjour, je vous attends. Merci de me repondre.",
+    "from": "yann",
+    "time": "15:04",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772046240"
+  },
+  {
+    "msg": "Dommage.",
+    "from": "yann",
+    "time": "15:19",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772047140"
+  },
+  {
+    "msg": "",
+    "from": "yann",
+    "time": "18:44",
+    "day": "wednesday",
+    "source": "wa-etienne",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772059440"
+  },
+  {
+    "msg": "Salut, je vous ecris au sujet d'un appartement en Martinique.",
+    "from": "yann",
+    "time": "14:23",
+    "day": "sunday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-22",
+    "id": "w-1771784580-1"
+  },
+  {
+    "msg": "Reine Sabrina m'a donne ton numero",
+    "from": "yann",
+    "time": "14:23",
+    "day": "sunday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-22",
+    "id": "w-1771784580-2"
+  },
+  {
+    "msg": "J'aimerais avoir plus de details. Je souhaite emmenager le 1er mars pour environ 6 mois (dates flexibles). Je suis developpeur freelance et je travaille a distance.",
+    "from": "yann",
+    "time": "14:24",
+    "day": "sunday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-22",
+    "id": "w-1771784640-1"
+  },
+  {
+    "msg": "Bonjour",
+    "from": "sylvain",
+    "time": "14:24",
+    "day": "sunday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-22",
+    "id": "w-1771784640-2"
+  },
+  {
+    "msg": "Pour un meilleur suivi de la location et afin de conserver tous nos echanges et documents comme preuve, je prefere communiquer par e-mail. Pouvez-vous s'il vous plait m'ecrire a l'adresse suivante : etiennemoulinat4@gmail.com ?",
+    "from": "sylvain",
+    "time": "14:25",
+    "day": "sunday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-22",
+    "id": "w-1771784700-1"
+  },
+  {
+    "msg": "Salut. J'allais justement envoyer un courriel.",
+    "from": "yann",
+    "time": "14:25",
+    "day": "sunday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-22",
+    "id": "w-1771784700-2"
+  },
+  {
+    "msg": "Sent.yannco5@gmail.com",
+    "from": "yann",
+    "time": "14:28",
+    "day": "sunday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-22",
+    "id": "w-1771784880"
+  },
+  {
+    "msg": "D'accord vous pouvez m'ecrire",
+    "from": "sylvain",
+    "time": "14:29",
+    "day": "sunday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-22",
+    "id": "w-1771784940"
+  },
+  {
+    "msg": "Salut, je vous tiendrai au courant. M. Moulinat et moi avons echange par courriel et je lui ai demande a visiter le studio. Si j'ai bien compris, c'est vous qui vous en occupez? Dans ce cas, je vous serais reconnaissant de bien vouloir organiser une visite des que possible Yann 🙃",
+    "from": "yann",
+    "time": "17:44",
+    "day": "sunday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-22",
+    "id": "w-1771796640"
+  },
+  {
+    "msg": "D'accord",
+    "from": "sylvain",
+    "time": "17:45",
+    "day": "sunday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-22",
+    "id": "w-1771796700"
+  },
+  {
+    "msg": "Informez-moi si tout est bon de votre cote.",
+    "from": "sylvain",
+    "time": "17:46",
+    "day": "sunday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-22",
+    "id": "w-1771796760"
+  },
+  {
+    "msg": "Oui, de mon cote, tout est pret. J'aimerais beaucoup venir demain pour visiter les lieux, ou mardi (apres midi, car j'ai rendez-vous avec mon conseiller a 11h00 heure locale).",
+    "from": "yann",
+    "time": "18:05",
+    "day": "sunday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-22",
+    "id": "w-1771797900"
+  },
+  {
+    "msg": "Salut. Avant de proceder au virement, je voulais te tenir au courant.",
+    "from": "yann",
+    "time": "09:13",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771852380"
+  },
+  {
+    "msg": "",
+    "from": "yann",
+    "time": "09:16",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771852560-1"
+  },
+  {
+    "msg": "Je voulais confirmer certains details avant de faire le virement..",
+    "from": "yann",
+    "time": "09:16",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771852560-2"
+  },
+  {
+    "msg": "",
+    "from": "yann",
+    "time": "10:00",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771855200"
+  },
+  {
+    "msg": "J'attends une reponse de votre part ou d'Etienne afin de confirmer le virement..",
+    "from": "yann",
+    "time": "11:54",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771862040"
+  },
+  {
+    "msg": "Pas de souci pour le virement de 200 €, cela nous convient parfaitement. Vous pouvez donc proceder a ce montant, et nous confirmerons des reception",
+    "from": "sylvain",
+    "time": "11:57",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771862220-1"
+  },
+  {
+    "msg": "N'oubliez pas de m'envoyer la capture du virement apres l'avoir effectue, comme preuve, ici sur Gmail",
+    "from": "sylvain",
+    "time": "11:57",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771862220-2"
+  },
+  {
+    "msg": "Je viens d'envoyer l'argent. Vous devriez deja le voir sur le compte.",
+    "from": "yann",
+    "time": "11:58",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771862280"
+  },
+  {
+    "msg": "Une capture",
+    "from": "sylvain",
+    "time": "11:59",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771862340-1"
+  },
+  {
+    "msg": "Ici",
+    "from": "sylvain",
+    "time": "11:59",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771862340-2"
+  },
+  {
+    "msg": "<Media omitted>",
+    "from": "yann",
+    "time": "11:59",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771862340-3"
+  },
+  {
+    "msg": "Pour confimez cela a ma collaboratrice",
+    "from": "sylvain",
+    "time": "11:59",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771862340-4"
+  },
+  {
+    "msg": "D'accord Un instant je vous reviens",
+    "from": "sylvain",
+    "time": "11:59",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771862340-5"
+  },
+  {
+    "msg": "Bien sur, ici. Mais vous avez deja l'argent sur le compte.",
+    "from": "yann",
+    "time": "11:59",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771862340-6"
+  },
+  {
+    "msg": "Un instant que mon collaboratrice m'informe",
+    "from": "sylvain",
+    "time": "12:00",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771862400"
+  },
+  {
+    "msg": "D'accord. J'ai egalement envoye la capture d'ecran par mail. Tenez-moi au courant. Bien sur, j'aimerais beaucoup signer les papiers et demenager au plus vite.",
+    "from": "yann",
+    "time": "12:05",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771862700-1"
+  },
+  {
+    "msg": "D'accord",
+    "from": "sylvain",
+    "time": "12:05",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771862700-2"
+  },
+  {
+    "msg": "J'ai deja envoye votre dossier a mon collaboratrice",
+    "from": "sylvain",
+    "time": "12:06",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771862760-1"
+  },
+  {
+    "msg": "J'attends qu'elle finit pour vous revenir svp.",
+    "from": "sylvain",
+    "time": "12:06",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771862760-2"
+  },
+  {
+    "msg": "C'etait en instantane que vous aviez fait ?",
+    "from": "sylvain",
+    "time": "12:29",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771864140"
+  },
+  {
+    "msg": "Oui",
+    "from": "yann",
+    "time": "12:36",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771864560-1"
+  },
+  {
+    "msg": "D'accord",
+    "from": "sylvain",
+    "time": "12:36",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771864560-2"
+  },
+  {
+    "msg": "Oui, j'attends qu'elle me remette le dossier pour le rendez-vous. Pour cela, je vous demande a quelle heure vous serez libre pour ce rendez-vous.",
+    "from": "sylvain",
+    "time": "12:37",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771864620-1"
+  },
+  {
+    "msg": "Voici le lien de suivi https://wise.com/en/track/0edd7fdeac9042698593422d31b62af0?utm_medium=rmt&utm_source=android&utm_content=activity-page",
+    "from": "yann",
+    "time": "12:37",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": true,
+    "date": "2026-02-23",
+    "id": "w-1771864620-2"
+  },
+  {
+    "msg": "Soit demain apres midi, soit mercredi. Je viens de Schoelcher, en transports publique.",
+    "from": "yann",
+    "time": "12:39",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771864740-1"
+  },
+  {
+    "msg": "L'heure du rendez-vous svp",
+    "from": "sylvain",
+    "time": "12:39",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771864740-2"
+  },
+  {
+    "msg": "D'accord",
+    "from": "sylvain",
+    "time": "12:39",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771864740-3"
+  },
+  {
+    "msg": "Mercredi a quel heure ?",
+    "from": "sylvain",
+    "time": "12:39",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771864740-4"
+  },
+  {
+    "msg": "D'accord",
+    "from": "sylvain",
+    "time": "12:39",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771864740-5"
+  },
+  {
+    "msg": "Ou est-ce ? Je dois calculer le temps de trajet en bus.",
+    "from": "yann",
+    "time": "12:39",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771864740-6"
+  },
+  {
+    "msg": "Etes-vous en Martinique ? Savez-vous si c'est accessible ?",
+    "from": "yann",
+    "time": "12:40",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771864800"
+  },
+  {
+    "msg": "Oui je suis a Martinique",
+    "from": "sylvain",
+    "time": "12:42",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771864920"
+  },
+  {
+    "msg": "😅 Et oui, Il y a des bus?",
+    "from": "yann",
+    "time": "12:43",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771864980"
+  },
+  {
+    "msg": "Le studio se situe a Sainte-Anne, en Martinique. C'est une commune calme, securisee et proche de la mer. Il est accessible en bus. Vous pouvez calculer votre temps de trajet depuis votre point de depart.",
+    "from": "sylvain",
+    "time": "12:49",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771865340"
+  },
+  {
+    "msg": "D'accord. Est-ce possible de reserver pour 14h00 ? Le dernier bus pour FdF est a 16h20.",
+    "from": "yann",
+    "time": "12:56",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771865760"
+  },
+  {
+    "msg": "Ou si par hasard vous venez de FdF (?)",
+    "from": "yann",
+    "time": "12:57",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771865820-1"
+  },
+  {
+    "msg": "Le mercredi ?",
+    "from": "sylvain",
+    "time": "12:57",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771865820-2"
+  },
+  {
+    "msg": "Oui",
+    "from": "yann",
+    "time": "12:57",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771865820-3"
+  },
+  {
+    "msg": "D'accord pour 14h",
+    "from": "sylvain",
+    "time": "12:58",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771865880-1"
+  },
+  {
+    "msg": "Ou 15h",
+    "from": "sylvain",
+    "time": "12:58",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771865880-2"
+  },
+  {
+    "msg": "Je partirai de Schoelcher de bonne heure demain matin, car le trajet est long. Je ne veux pas rater le bus du retour.",
+    "from": "yann",
+    "time": "12:59",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771865940-1"
+  },
+  {
+    "msg": "D'accord",
+    "from": "sylvain",
+    "time": "12:59",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771865940-2"
+  },
+  {
+    "msg": "Demain c'est mardi ?",
+    "from": "sylvain",
+    "time": "12:59",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771865940-3"
+  },
+  {
+    "msg": "Pas demain, mercredi. Desole.",
+    "from": "yann",
+    "time": "12:59",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771865940-4"
+  },
+  {
+    "msg": "D'accord",
+    "from": "sylvain",
+    "time": "13:00",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771866000-1"
+  },
+  {
+    "msg": "Mercredi, 14h00 a Sainte-Anne",
+    "from": "yann",
+    "time": "13:00",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771866000-2"
+  },
+  {
+    "msg": "Oui",
+    "from": "sylvain",
+    "time": "13:00",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771866000-3"
+  },
+  {
+    "msg": "Informer moi avant de prendre la route.",
+    "from": "sylvain",
+    "time": "13:00",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771866000-4"
+  },
+  {
+    "msg": "Car je suis pas stable",
+    "from": "sylvain",
+    "time": "13:01",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771866060-1"
+  },
+  {
+    "msg": "Mais je serai a l'heure a 15h, je vous attends.",
+    "from": "sylvain",
+    "time": "13:01",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771866060-2"
+  },
+  {
+    "msg": "Mercredi matin, je partirai tot. Je dois prendre un bus pour Fort-de-France, puis Le Lamentin, et enfin Sainte-Anne. Puis-je deja emporter quelques vetements a deposer sur place ?",
+    "from": "yann",
+    "time": "13:03",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771866180"
+  },
+  {
+    "msg": "Oui, pour respecter le rendez-vous de 15h",
+    "from": "sylvain",
+    "time": "13:05",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771866300"
+  },
+  {
+    "msg": "Est-ce possible a 14h? J'ai peur de rater le dernier bus. Et est-ce que je pourrais laisser des vetements sur place?",
+    "from": "yann",
+    "time": "13:08",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771866480"
+  },
+  {
+    "msg": "Je comprends que vous souhaitez venir visiter le studio. Il faudra donc que nous completions tous les papiers des maintenant. Mercredi, il ne restera plus qu'a signer, remettre les cles et regler la moitie du depot restant. Si cela vous convient, pourriez-vous en informer la collaboratrice afin qu'elle prepare les papiers generaux",
+    "from": "sylvain",
+    "time": "13:11",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771866660"
+  },
+  {
+    "msg": "Vous voulez dire envoyer par mail a Etienne ?",
+    "from": "yann",
+    "time": "13:13",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771866780"
+  },
+  {
+    "msg": "Je vous envoie un courriel (etiennemoulinat4@gmail.com) pour vous informer que je viendrai mercredi a 14h00 pour signer tous les documents.",
+    "from": "yann",
+    "time": "13:15",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771866900-1"
+  },
+  {
+    "msg": "D'accord",
+    "from": "sylvain",
+    "time": "13:15",
+    "day": "monday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-23",
+    "id": "w-1771866900-2"
+  },
+  {
+    "msg": "Bonjour, je voulais juste m'assurer que tout allait bien. J'apporterai des affaires demain. J'ai des fournitures a transporter de chez Schoelcher.",
+    "from": "yann",
+    "time": "12:58",
+    "day": "tuesday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771952280"
+  },
+  {
+    "msg": "",
+    "from": "yann",
+    "time": "15:25",
+    "day": "tuesday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771961100"
+  },
+  {
+    "msg": "",
+    "from": "yann",
+    "time": "15:26",
+    "day": "tuesday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771961160"
+  },
+  {
+    "msg": "Bonjour. Je vous serais tres reconnaissant de bien vouloir me repondre.",
+    "from": "yann",
+    "time": "15:46",
+    "day": "tuesday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-24",
+    "id": "w-1771962360"
+  },
+  {
+    "msg": "",
+    "from": "yann",
+    "time": "11:22",
+    "day": "wednesday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772032920"
+  },
+  {
+    "msg": "J'ai egalement depose une plainte contre vous.",
+    "from": "yann",
+    "time": "16:46",
+    "day": "wednesday",
+    "source": "wa-sylvain",
+    "has_link": false,
+    "date": "2026-02-25",
+    "id": "w-1772052360"
+  }
+]
