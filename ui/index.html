@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grand Theft Appartment: Martinique</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════════════════════
+   RESET & GLOBAL
+   ═══════════════════════════════════════════════════════════════════════════ */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; overflow: hidden; }
+body {
+  background: #080808;
+  color: #c8c0b8;
+  font-family: 'Rajdhani', 'Segoe UI', sans-serif;
+}
+
+/* scanlines */
+body::after {
+  content: '';
+  position: fixed; inset: 0;
+  background: repeating-linear-gradient(0deg,
+    transparent 0px, transparent 2px,
+    rgba(0,0,0,0.045) 2px, rgba(0,0,0,0.045) 4px);
+  pointer-events: none;
+  z-index: 10000;
+}
+
+:root {
+  --gold:   #d4a020;
+  --orange: #e08818;
+  --red:    #cc2828;
+  --yellow: #c8a820;
+  --green:  #28a050;
+  --blue:   #3878c8;
+  --purple: #7848b8;
+  --teal:   #2898a0;
+  --gray:   #555;
+  --card:   #0f0f0f;
+  --border: #1e1e1e;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   SCREEN SYSTEM
+   ═══════════════════════════════════════════════════════════════════════════ */
+.screen {
+  position: fixed; inset: 0;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+.screen.active { opacity: 1; pointer-events: all; }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   HOME SCREEN
+   ═══════════════════════════════════════════════════════════════════════════ */
+#home {
+  background: radial-gradient(ellipse at 50% 38%, #180a00 0%, #080808 65%);
+}
+
+.home-logo {
+  width: min(280px, 40vw);
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 20px rgba(212,160,32,0.35));
+  animation: glow-pulse 3.5s ease-in-out infinite;
+}
+@keyframes glow-pulse {
+  0%,100% { filter: drop-shadow(0 0 20px rgba(212,160,32,0.35)); }
+  50%     { filter: drop-shadow(0 0 38px rgba(212,160,32,0.7)); }
+}
+
+.home-sub {
+  font-family: 'Orbitron', monospace;
+  font-size: 10px; letter-spacing: 7px;
+  color: rgba(212,160,32,0.4);
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.home-menu {
+  display: flex; gap: min(80px, 8vw);
+  align-items: center;
+}
+
+.menu-btn {
+  display: flex; flex-direction: column;
+  align-items: center; gap: 18px;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+.menu-btn:hover { transform: scale(1.06) translateY(-4px); }
+.menu-btn:hover img { filter: drop-shadow(0 6px 28px rgba(212,160,32,0.55)); }
+
+.menu-btn img {
+  height: min(190px, 24vh);
+  object-fit: contain;
+  transition: filter 0.25s ease;
+}
+
+.menu-btn span {
+  font-family: 'Orbitron', monospace;
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 5px;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   SHARED: BACK BUTTON & SECTION HEADER
+   ═══════════════════════════════════════════════════════════════════════════ */
+.topbar {
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 56px;
+  display: flex; align-items: center;
+  padding: 0 28px;
+  background: rgba(8,8,8,0.85);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+}
+
+.back-btn {
+  font-family: 'Orbitron', monospace;
+  font-size: 10px; letter-spacing: 2px;
+  color: rgba(212,160,32,0.65);
+  cursor: pointer; border: none; background: none;
+  padding: 6px 0;
+  transition: color 0.2s;
+}
+.back-btn:hover { color: var(--gold); }
+
+.topbar-title {
+  flex: 1; text-align: center;
+  font-family: 'Orbitron', monospace;
+  font-size: 13px; font-weight: 900;
+  letter-spacing: 5px;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+.topbar-icon {
+  height: 30px; margin-right: 10px;
+  vertical-align: middle;
+  filter: drop-shadow(0 0 6px rgba(212,160,32,0.5));
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   SUSPECTS SCREEN
+   ═══════════════════════════════════════════════════════════════════════════ */
+#suspects {
+  background: radial-gradient(ellipse at 50% 25%, #100004 0%, #080808 55%);
+  padding-top: 56px;
+}
+
+.suspects-grid {
+  display: flex; gap: 16px;
+  justify-content: center;
+  align-items: stretch;
+  padding: 28px 24px 24px;
+  max-width: 1100px;
+}
+
+/* Card */
+.s-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  width: 192px; flex-shrink: 0;
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  display: flex; flex-direction: column;
+  overflow: hidden;
+}
+.s-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 32px rgba(212,160,32,0.12);
+}
+
+.s-photo {
+  width: 100%; height: 210px;
+  object-fit: cover; object-position: top center;
+  filter: sepia(0.25) contrast(1.05) brightness(0.9);
+  display: block;
+}
+
+.s-placeholder {
+  width: 100%; height: 210px;
+  background: #111;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 64px; color: #222;
+}
+
+.s-body { padding: 12px 14px 14px; flex: 1; display: flex; flex-direction: column; }
+
+.s-role {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 9px; letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  display: inline-block;
+  margin-bottom: 8px;
+  align-self: flex-start;
+}
+.role-scammer     { background: rgba(204,40,40,0.8); color: #fff; }
+.role-facebook    { background: rgba(40,80,180,0.8); color: #fff; }
+.role-realtor     { background: rgba(180,100,20,0.8); color: #fff; }
+.role-beneficiary { background: rgba(120,72,184,0.8); color: #fff; }
+
+.s-name {
+  font-family: 'Orbitron', monospace;
+  font-size: 11px; font-weight: 700;
+  color: #e0e0e0; line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.s-snippet {
+  font-size: 11px; color: #666;
+  line-height: 1.5; flex: 1;
+}
+
+.s-money {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 12px; color: var(--red);
+  margin-top: 8px;
+}
+
+.s-tap {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 9px; letter-spacing: 2px;
+  color: #333; text-align: center;
+  padding-top: 8px; margin-top: 8px;
+  border-top: 1px solid #181818;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   SUSPECT MODAL
+   ═══════════════════════════════════════════════════════════════════════════ */
+.overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.88);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 5000;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.25s;
+}
+.overlay.open { opacity: 1; pointer-events: all; }
+
+.modal {
+  background: #0c0c0c;
+  border: 1px solid #2a2a2a;
+  max-width: 680px; width: 90vw;
+  max-height: 82vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 0 60px rgba(0,0,0,0.6);
+}
+.modal::-webkit-scrollbar { width: 4px; }
+.modal::-webkit-scrollbar-thumb { background: #2a2a2a; }
+
+.m-close {
+  position: absolute; top: 12px; right: 16px;
+  font-size: 18px; color: #444; cursor: pointer;
+  z-index: 10; background: none; border: none;
+  transition: color 0.2s;
+}
+.m-close:hover { color: #fff; }
+
+.m-head {
+  display: flex; gap: 22px; align-items: flex-start;
+  padding: 24px 26px;
+  background: #080808;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.m-photo {
+  width: 110px; height: 138px;
+  object-fit: cover; object-position: top center;
+  filter: sepia(0.15); border: 1px solid #2a2a2a;
+  flex-shrink: 0;
+}
+.m-photo-none {
+  width: 110px; height: 138px;
+  background: #111; border: 1px solid #2a2a2a;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 50px; color: #1e1e1e; flex-shrink: 0;
+}
+
+.m-meta { flex: 1; }
+.m-role-line {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 9px; letter-spacing: 4px;
+  color: var(--red); margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.m-name {
+  font-family: 'Orbitron', monospace;
+  font-size: 17px; font-weight: 900;
+  color: #f0f0f0; margin-bottom: 6px; line-height: 1.3;
+}
+.m-stars { font-size: 16px; color: var(--gold); margin-bottom: 10px; }
+.m-desc { font-size: 12.5px; color: #777; line-height: 1.6; }
+
+.m-body { padding: 22px 26px; }
+
+.m-section {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 9px; letter-spacing: 4px;
+  color: #444; text-transform: uppercase;
+  margin-bottom: 10px; margin-top: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--border);
+}
+.m-section:first-child { margin-top: 0; }
+
+.m-row {
+  display: flex; gap: 10px; margin-bottom: 5px; font-size: 12px;
+}
+.m-key {
+  color: #444; min-width: 110px;
+  font-family: 'Share Tech Mono', monospace; font-size: 10px;
+}
+.m-val {
+  color: #b0b0b0;
+  font-family: 'Share Tech Mono', monospace; font-size: 11px;
+  word-break: break-all;
+}
+.m-val.gold { color: var(--gold); }
+.m-val.red  { color: var(--red); }
+
+.m-mrz {
+  background: #080808; border: 1px solid #1a1a1a;
+  padding: 8px 12px; margin-top: 4px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px; color: #55aa55;
+  letter-spacing: 0.5px; line-height: 1.9;
+}
+
+.m-thumbs { display: flex; gap: 8px; margin-top: 8px; }
+.m-thumb {
+  width: 72px; height: 90px;
+  object-fit: cover; object-position: top center;
+  border: 1px solid #2a2a2a;
+  filter: sepia(0.2);
+  cursor: pointer;
+  transition: filter 0.2s, transform 0.2s;
+}
+.m-thumb:hover { filter: sepia(0); transform: scale(1.04); }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   TIMELINE SCREEN
+   ═══════════════════════════════════════════════════════════════════════════ */
+#timeline {
+  background: radial-gradient(ellipse at 50% 25%, #000810 0%, #080808 55%);
+  padding-top: 56px;
+}
+
+.tl-legend {
+  display: flex; gap: 16px; flex-wrap: wrap;
+  justify-content: center;
+  padding: 14px 20px 8px;
+}
+.leg {
+  display: flex; align-items: center; gap: 5px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 9px; color: #444; letter-spacing: 1px;
+}
+.leg-dot {
+  width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0;
+}
+
+.tl-cols {
+  display: flex; gap: 0; flex: 1;
+  padding: 0 16px 16px;
+  overflow: hidden;
+}
+
+.tl-day {
+  flex: 1; display: flex; flex-direction: column;
+  border-right: 1px solid #141414;
+  padding: 0 7px;
+  min-width: 0;
+}
+.tl-day:last-child { border-right: none; }
+
+.day-hdr {
+  text-align: center;
+  padding-bottom: 10px; margin-bottom: 8px;
+  border-bottom: 1px solid #222;
+}
+.day-hdr .day-name {
+  font-family: 'Orbitron', monospace;
+  font-size: 14px; font-weight: 900;
+  color: var(--gold);
+}
+.day-hdr .day-date {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 9px; letter-spacing: 2px; color: #444;
+}
+
+.ev-stack {
+  display: flex; flex-direction: column;
+  gap: 5px; flex: 1;
+  overflow-y: auto;
+  padding-right: 3px;
+}
+.ev-stack::-webkit-scrollbar { width: 2px; }
+.ev-stack::-webkit-scrollbar-thumb { background: #222; }
+
+/* Event node */
+.ev {
+  background: #0c0c0c;
+  border: 1px solid #181818;
+  padding: 7px 9px;
+  cursor: pointer;
+  position: relative;
+  transition: border-color 0.15s, transform 0.12s;
+}
+.ev:hover {
+  border-color: var(--gold);
+  transform: translateX(2px);
+}
+
+/* left accent bar */
+.ev::before {
+  content: ''; position: absolute;
+  left: 0; top: 0; bottom: 0; width: 3px;
+}
+.ev.t-contact::before    { background: var(--blue); }
+.ev.t-info::before       { background: var(--teal); }
+.ev.t-warning::before    { background: var(--yellow); }
+.ev.t-escalation::before { background: var(--orange); }
+.ev.t-banking::before    { background: var(--purple); }
+.ev.t-transfer::before   { background: var(--red); }
+.ev.t-appointment::before{ background: var(--green); }
+.ev.t-ghosted::before    { background: #444; }
+
+.ev-time {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 9px; color: #444;
+}
+.ev-title {
+  font-size: 11.5px; font-weight: 700;
+  color: #bbb; line-height: 1.3;
+  margin-top: 1px;
+}
+.ev.t-transfer .ev-title { color: var(--red); }
+.ev.t-ghosted .ev-title  { color: #888; }
+.ev-actor {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 8px; color: #333;
+  margin-top: 2px; letter-spacing: 0.5px;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   EVENT MODAL
+   ═══════════════════════════════════════════════════════════════════════════ */
+.ev-modal {
+  background: #0c0c0c;
+  border: 1px solid #2a2a2a;
+  max-width: 460px; width: 88vw;
+  padding: 26px 30px;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0,0,0,0.7);
+}
+
+.evm-type {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 9px; letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.evm-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 14px; font-weight: 700;
+  color: #f0f0f0; margin-bottom: 5px;
+}
+.evm-datetime {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px; color: #444; margin-bottom: 16px;
+}
+.evm-desc {
+  font-size: 13px; color: #888; line-height: 1.7;
+}
+.evm-actor {
+  margin-top: 14px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px; color: #444;
+}
+.evm-actor span { color: var(--gold); }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   UTILITIES
+   ═══════════════════════════════════════════════════════════════════════════ */
+.hidden { display: none !important; }
+</style>
+</head>
+
+<body>
+
+<!-- ═══════════════════════ HOME ═══════════════════════ -->
+<div class="screen active" id="home">
+  <img src="gta.png" class="home-logo" alt="Grand Theft Appartment: Martinique">
+  <div class="home-sub">Case Dossier &middot; Feb 2026</div>
+  <div class="home-menu">
+    <div class="menu-btn" onclick="go('suspects')">
+      <img src="wanted.png" alt="Suspects">
+      <span>Suspects</span>
+    </div>
+    <div class="menu-btn" onclick="go('timeline')">
+      <img src="timeline.png" alt="Timeline"
+           style="border-radius:12px; background:#111; padding:6px;">
+      <span>Timeline</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════ SUSPECTS ═══════════════════════ -->
+<div class="screen" id="suspects">
+  <div class="topbar">
+    <button class="back-btn" onclick="go('home')">&larr; BACK</button>
+    <div class="topbar-title">
+      <img src="wanted.png" class="topbar-icon" alt="">Suspect Database
+    </div>
+    <div style="width:60px"></div>
+  </div>
+  <div class="suspects-grid" id="suspects-grid"></div>
+</div>
+
+<!-- ═══════════════════════ TIMELINE ═══════════════════════ -->
+<div class="screen" id="timeline">
+  <div class="topbar">
+    <button class="back-btn" onclick="go('home')">&larr; BACK</button>
+    <div class="topbar-title">
+      <img src="timeline.png" class="topbar-icon"
+           style="border-radius:6px; background:#181818; padding:2px;" alt="">Case Timeline
+    </div>
+    <div style="width:60px"></div>
+  </div>
+
+  <div class="tl-legend" id="tl-legend"></div>
+  <div class="tl-cols" id="tl-cols"></div>
+</div>
+
+<!-- ═══════════════════════ SUSPECT MODAL ═══════════════════════ -->
+<div class="overlay" id="sus-overlay" onclick="closeSus(event)">
+  <div class="modal" id="sus-modal">
+    <button class="m-close" onclick="closeSusDirect()">&times;</button>
+    <div id="sus-content"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════ EVENT MODAL ═══════════════════════ -->
+<div class="overlay" id="ev-overlay" onclick="closeEv(event)">
+  <div class="ev-modal" id="ev-modal-box">
+    <button class="m-close" onclick="closeEvDirect()">&times;</button>
+    <div id="ev-content"></div>
+  </div>
+</div>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════════════════
+   DATA
+   ═══════════════════════════════════════════════════════════════════════════ */
+const SUSPECTS = [
+  {
+    name: "Etienne Moulinat",
+    role: "Main Scammer", roleCls: "scammer", stars: 5,
+    photos: ["../Pictures/Etienne Whatsapp.jpg","../Pictures/Etienne gmail.jpg"],
+    snippet: "Orchestrated the entire scam over email.",
+    money: "Received €600+",
+    desc: "Primary orchestrator. Posed as a landlord renting a Sainte-Anne studio. Gradually escalated demands from €20 to €600+ across 5 days. Never completed a meaningful phone call. Provided a non-existent contract address. Never showed up to the appointment.",
+    sections: [
+      { label: "Contact",  rows: [
+        { k:"Phone", v:"+33 7 57 83 91 83" },
+        { k:"Email", v:"etiennemoulinat4@gmail.com" },
+      ]},
+      { label: "Identity Card", rows: [
+        { k:"Full Name",  v:"MOULINAT Etienne Edouard Jean-Marie" },
+        { k:"Birth Date", v:"19/10/1948" },
+        { k:"ID Number",  v:"150106102409" },
+        { k:"Document",   v:"ID Etienne.pdf" },
+      ], mrz: ["IDFRAMOULINAT<<<<<<<<<<<<<<<<<061014","1501061024091ETIENNE<<EDOUA4810195M6"] },
+    ]
+  },
+  {
+    name: "Reine Sabrina",
+    role: "Facebook", roleCls: "facebook", stars: 2,
+    photos: ["../Pictures/Reine Sabrina.jpg"],
+    snippet: "Posted the rental ad. Entry point of the scam.",
+    desc: "Posted the apartment rental ad on a Martinique Facebook group. Privately shared Sylvain's phone number and Etienne's email address to the victim. Claims Etienne is her cousin.",
+    sections: [
+      { label: "Contact", rows: [
+        { k:"Platform", v:"Facebook Messenger" },
+        { k:"Phone",    v:"Unknown" },
+        { k:"Email",    v:"Unknown" },
+      ]}
+    ]
+  },
+  {
+    name: "Sylvain",
+    role: "Realtor", roleCls: "realtor", stars: 3,
+    photos: ["../Pictures/Sylvain.jpg"],
+    snippet: "WhatsApp intermediary. Never answered calls.",
+    desc: "Second contact, reached via WhatsApp (+33 7 73 97 29 07, number given by Reine). Redirected all communication to Etienne's email. Never answered any calls. After Monday's transfers, messages showed single checkmarks only — likely blocked the victim.",
+    sections: [
+      { label: "Contact", rows: [
+        { k:"Phone", v:"+33 7 73 97 29 07" },
+        { k:"Platform", v:"WhatsApp" },
+      ]}
+    ]
+  },
+  {
+    name: "Sondayeni Sanou",
+    role: "Beneficiary", roleCls: "beneficiary", stars: 4,
+    photos: [],
+    snippet: "Money mule #1. Received €400.",
+    money: "€400 received (Transfers #1 & #2)",
+    desc: "First money mule. Received €200 on Monday (via Wise) and €200 on Tuesday (via Nickel). Presented as Etienne's 'collaboratrice'. Account at Deblock, a French fintech.",
+    sections: [
+      { label: "Banking Details", rows: [
+        { k:"IBAN",      v:"FR76 1774 8019 8470 0732 7966 495" },
+        { k:"BIC",       v:"DBLKFR22XXX" },
+        { k:"Bank",      v:"Deblock" },
+        { k:"Bank URL",  v:"deblock.com/fr-FR", link:"https://deblock.com/fr-FR" },
+      ]}
+    ]
+  },
+  {
+    name: "Junior Yohan",
+    role: "Beneficiary", roleCls: "beneficiary", stars: 4,
+    photos: [],
+    snippet: "Money mule #2. \"Etienne's brother.\"",
+    money: "€200 received (Transfer #3)",
+    desc: "Second money mule. Introduced on Wednesday when Etienne claimed the first account had 'rejected' the transfers. Claimed to be Etienne's brother and employee. Received €200 from the victim's uncle via instant transfer.",
+    extra: "Etienne's brother",
+    sections: [
+      { label: "Banking Details", rows: [
+        { k:"IBAN",      v:"FR76 4061 8805 0500 0406 8586 984" },
+        { k:"BIC",       v:"BOUSFRPPXXX" },
+        { k:"Bank",      v:"BoursoBank" },
+        { k:"Bank URL",  v:"boursobank.com", link:"https://www.boursobank.com/" },
+      ]}
+    ]
+  }
+];
+
+const DAYS = [
+  { key:"sat", name:"SAT", date:"21 Feb" },
+  { key:"sun", name:"SUN", date:"22 Feb" },
+  { key:"mon", name:"MON", date:"23 Feb" },
+  { key:"tue", name:"TUE", date:"24 Feb" },
+  { key:"wed", name:"WED", date:"25 Feb" },
+];
+
+const EVENTS = [
+  // SAT
+  { day:"sat", time:"08:36", type:"contact", title:"Facebook Ad Seen",
+    actor:"Reine Sabrina",
+    desc:"Yann sees a rental ad on a Martinique Facebook group and messages the author, Reine Sabrina." },
+  { day:"sat", time:"13:10", type:"contact", title:"Referral Received",
+    actor:"Reine Sabrina",
+    desc:"Reine says her cousin handles rentals. Shares a phone number (+33 773 97 29 07) and an email (etiennemoulinat4@gmail.com). They belong to different people. Reine asks to communicate by email." },
+  // SUN
+  { day:"sun", time:"14:23", type:"contact", title:"WhatsApp: Sylvain",
+    actor:"Sylvain",
+    desc:"Yann contacts the phone number on WhatsApp. Sylvain asks him to write to the email — phrasing it as if it were her own address." },
+  { day:"sun", time:"14:29", type:"contact", title:"Email Thread Begins",
+    actor:"Etienne",
+    desc:"Etienne presents himself as the landlord. Offers a furnished studio at €450/mo and a 2-bed at €950/mo. The email thread will span 49 exchanges." },
+  { day:"sun", time:"16:38", type:"info", title:"Studio Photos Shared",
+    actor:"Etienne",
+    desc:"Google Drive link sent with photos of the apartment." },
+  { day:"sun", time:"18:28", type:"warning", title:"Documents Requested",
+    actor:"Etienne",
+    desc:"Etienne asks for ID and proof of income. Explicitly states deposit is paid at signing — no upfront payment needed." },
+  { day:"sun", time:"21:17", type:"escalation", title:"Escalation #1 — €20",
+    actor:"Etienne",
+    desc:"After receiving Yann's personal documents, Etienne introduces a €20 'seriousness' deposit to confirm the visit. Promised to be deducted from the security deposit." },
+  // MON
+  { day:"mon", time:"07:22", type:"escalation", title:"Escalation #2 — €220",
+    actor:"Etienne",
+    desc:"The amount jumps to €220. Etienne claims €200 covers his travel costs and is refundable if Yann doesn't like the apartment. €20 is kept regardless." },
+  { day:"mon", time:"08:51", type:"banking", title:"Beneficiary: Sondayeni",
+    actor:"Etienne",
+    desc:"Bank details sent: Sondayeni Sanou, FR76 1774 8019 8470 0732 7966 495, Deblock. Chain is now: Facebook (Reine) → WhatsApp (Sylvain) → Email (Etienne) → Bank (Sondayeni)." },
+  { day:"mon", time:"09:13", type:"warning", title:"Sylvain Unreachable",
+    actor:"Sylvain",
+    desc:"Yann tries calling Sylvain before transferring money. Two WhatsApp call attempts (09:16 and 10:00) — no answer." },
+  { day:"mon", time:"10:37", type:"info", title:"Agreed on €200",
+    actor:"Etienne",
+    desc:"Yann's main bank (Nickel) blocks transfers to new beneficiaries for 24 hours. He uses Wise, which only has €200. Etienne accepts." },
+  { day:"mon", time:"12:03", type:"transfer", title:"TRANSFER #1 — €200",
+    actor:"Yann → Sondayeni",
+    desc:"€200 sent from Wise to Sondayeni Sanou. First real money lost. Screenshot shared as proof. Running total: €200." },
+  { day:"mon", time:"13:15", type:"appointment", title:"Meeting Confirmed",
+    actor:"Etienne + Sylvain",
+    desc:"Appointment agreed: Wednesday 25 Feb at 14:00 at the apartment. Address to follow." },
+  // TUE
+  { day:"tue", time:"13:36", type:"escalation", title:"Escalation #3 — +€200",
+    actor:"Etienne",
+    desc:"Etienne demands another €200 on top of the previous transfer. Only €50 remains for the meeting. Shares his WhatsApp for the first time: +33 757 839 183." },
+  { day:"tue", time:"15:25", type:"warning", title:"Sylvain Blocked?",
+    actor:"Sylvain",
+    desc:"Messages now show single checkmark. Landline goes to voicemail. Calls from a different number fail too. Yann suspects he was blocked." },
+  { day:"tue", time:"15:38", type:"warning", title:"Failed Calls to Etienne",
+    actor:"Etienne",
+    desc:"Multiple WhatsApp calls between 15:39–15:42. Etienne answers but whispers, line drops repeatedly. Normal calls: busy immediately. No voice message ever sent." },
+  { day:"tue", time:"15:59", type:"escalation", title:"Threatens Refund",
+    actor:"Etienne",
+    desc:"Etienne complains it's 'too complicated' and threatens to cancel and refund. Classic pressure tactic to force compliance." },
+  { day:"tue", time:"16:24", type:"transfer", title:"TRANSFER #2 — €200",
+    actor:"Yann → Sondayeni",
+    desc:"€200 sent from Nickel to Sondayeni Sanou. Running total: €400." },
+  { day:"tue", time:"16:41", type:"appointment", title:"Address Shared",
+    actor:"Etienne",
+    desc:"6 Rue Abbé Hurard, Sainte-Anne 97227. Meeting confirmed for tomorrow at 14:00." },
+  // WED
+  { day:"wed", time:"05:38", type:"warning", title:"\"Transfer Rejected\"",
+    actor:"Etienne",
+    desc:"Etienne claims the bank returned the money to Yann's account. Sends screenshots. Asks Yann to call his bank to 'fix it'. The money was never returned." },
+  { day:"wed", time:"09:52", type:"banking", title:"New Beneficiary: Junior",
+    actor:"Etienne",
+    desc:"New IBAN given: Junior Yohan, FR76 4061 8805 0500 0406 8586 984 (BoursoBank). Claimed to be Etienne's brother and employee." },
+  { day:"wed", time:"11:01", type:"transfer", title:"TRANSFER #3 — €200",
+    actor:"Yann's uncle → Junior",
+    desc:"€200 sent by Yann's uncle to Junior Yohan (BoursoBank) via instant transfer. Running total: €600+." },
+  { day:"wed", time:"12:27", type:"appointment", title:"Yann Arrives",
+    actor:"Yann",
+    desc:"Yann arrives at 6 Rue Abbé Hurard, Sainte-Anne, with all his luggage. Waits outside in the heat." },
+  { day:"wed", time:"14:00+", type:"ghosted", title:"NOBODY SHOWS UP",
+    actor:"Etienne",
+    desc:"The appointment time comes and goes. Etienne claims to be 'on the way' but the address doesn't match any residence. He eventually goes completely silent." },
+  { day:"wed", time:"16:46", type:"ghosted", title:"Complaint Filed",
+    actor:"Yann",
+    desc:"Yann files a formal complaint. All communication channels go dark." },
+];
+
+const TYPE_META = {
+  contact:     { color:"var(--blue)",   label:"CONTACT" },
+  info:        { color:"var(--teal)",   label:"INFO" },
+  warning:     { color:"var(--yellow)", label:"WARNING" },
+  escalation:  { color:"var(--orange)", label:"ESCALATION" },
+  banking:     { color:"var(--purple)", label:"BANKING" },
+  transfer:    { color:"var(--red)",    label:"TRANSFER" },
+  appointment: { color:"var(--green)",  label:"APPOINTMENT" },
+  ghosted:     { color:"#555",          label:"GHOSTED" },
+};
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   NAVIGATION
+   ═══════════════════════════════════════════════════════════════════════════ */
+function go(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   RENDER SUSPECTS
+   ═══════════════════════════════════════════════════════════════════════════ */
+function renderSuspects() {
+  const grid = document.getElementById('suspects-grid');
+  grid.innerHTML = SUSPECTS.map((s, i) => {
+    const photo = s.photos.length
+      ? `<img class="s-photo" src="${s.photos[0]}" alt="${s.name}">`
+      : `<div class="s-placeholder">&#9764;</div>`;
+    const money = s.money ? `<div class="s-money">${s.money}</div>` : '';
+    return `
+      <div class="s-card" onclick="openSus(${i})">
+        ${photo}
+        <div class="s-body">
+          <div class="s-role role-${s.roleCls}">${s.role}</div>
+          <div class="s-name">${s.name}</div>
+          <div class="s-snippet">${s.snippet}</div>
+          ${money}
+          <div class="s-tap">CLICK TO VIEW</div>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   SUSPECT MODAL
+   ═══════════════════════════════════════════════════════════════════════════ */
+function openSus(i) {
+  const s = SUSPECTS[i];
+  const photo = s.photos.length
+    ? `<img class="m-photo" src="${s.photos[0]}" alt="${s.name}">`
+    : `<div class="m-photo-none">&#9764;</div>`;
+  const stars = '&#9733;'.repeat(s.stars) + '<span style="color:#222">' + '&#9733;'.repeat(5 - s.stars) + '</span>';
+
+  let extra = s.extra ? `<div style="margin-top:8px;font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--orange);">NOTE: ${s.extra.toUpperCase()}</div>` : '';
+
+  let body = '';
+  for (const sec of s.sections) {
+    body += `<div class="m-section">${sec.label}</div>`;
+    for (const r of sec.rows) {
+      const val = r.link
+        ? `<a href="${r.link}" target="_blank" style="color:var(--blue);text-decoration:none">${r.v}</a>`
+        : r.v;
+      body += `<div class="m-row"><div class="m-key">${r.k}</div><div class="m-val">${val}</div></div>`;
+    }
+    if (sec.mrz) {
+      body += `<div class="m-row"><div class="m-key">MRZ</div></div>`;
+      body += `<div class="m-mrz">${sec.mrz.join('<br>')}</div>`;
+    }
+  }
+
+  if (s.photos.length > 1) {
+    body += `<div class="m-section">Photos</div>`;
+    body += `<div class="m-thumbs">`;
+    for (const p of s.photos) {
+      body += `<img class="m-thumb" src="${p}" alt="photo" onclick="window.open('${p}','_blank')">`;
+    }
+    body += `</div>`;
+  }
+
+  document.getElementById('sus-content').innerHTML = `
+    <div class="m-head">
+      ${photo}
+      <div class="m-meta">
+        <div class="m-role-line">SUSPECT FILE</div>
+        <div class="m-name">${s.name}</div>
+        <div class="m-stars">${stars}</div>
+        <div class="s-role role-${s.roleCls}" style="margin-bottom:8px">${s.role}</div>
+        ${s.money ? `<div style="font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--red)">${s.money}</div>` : ''}
+        ${extra}
+      </div>
+    </div>
+    <div class="m-body">
+      <div class="m-section">Profile</div>
+      <div class="m-desc" style="margin-bottom:8px;color:#777;font-size:12.5px;line-height:1.65">${s.desc}</div>
+      ${body}
+    </div>`;
+  document.getElementById('sus-overlay').classList.add('open');
+}
+
+function closeSus(e) { if (e.target === e.currentTarget) closeSusDirect(); }
+function closeSusDirect() { document.getElementById('sus-overlay').classList.remove('open'); }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   RENDER TIMELINE
+   ═══════════════════════════════════════════════════════════════════════════ */
+function renderTimeline() {
+  // legend
+  const legEl = document.getElementById('tl-legend');
+  legEl.innerHTML = Object.entries(TYPE_META).map(([k,v]) =>
+    `<div class="leg"><div class="leg-dot" style="background:${v.color}"></div>${v.label}</div>`
+  ).join('');
+
+  // columns
+  const cols = document.getElementById('tl-cols');
+  cols.innerHTML = DAYS.map(d => {
+    const evs = EVENTS.filter(e => e.day === d.key);
+    const cards = evs.map((e, i) => {
+      const idx = EVENTS.indexOf(e);
+      return `
+        <div class="ev t-${e.type}" onclick="openEv(${idx})">
+          <div class="ev-time">${e.time}</div>
+          <div class="ev-title">${e.title}</div>
+          <div class="ev-actor">${e.actor}</div>
+        </div>`;
+    }).join('');
+    return `
+      <div class="tl-day">
+        <div class="day-hdr">
+          <div class="day-name">${d.name}</div>
+          <div class="day-date">${d.date}</div>
+        </div>
+        <div class="ev-stack">${cards}</div>
+      </div>`;
+  }).join('');
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   EVENT MODAL
+   ═══════════════════════════════════════════════════════════════════════════ */
+function openEv(i) {
+  const e = EVENTS[i];
+  const meta = TYPE_META[e.type];
+  const day = DAYS.find(d => d.key === e.day);
+
+  document.getElementById('ev-content').innerHTML = `
+    <div class="evm-type" style="color:${meta.color}">${meta.label}</div>
+    <div class="evm-title">${e.title}</div>
+    <div class="evm-datetime">${day.name} ${day.date} &middot; ${e.time}</div>
+    <div class="evm-desc">${e.desc}</div>
+    <div class="evm-actor">Actor: <span>${e.actor}</span></div>`;
+  document.getElementById('ev-overlay').classList.add('open');
+}
+
+function closeEv(e) { if (e.target === e.currentTarget) closeEvDirect(); }
+function closeEvDirect() { document.getElementById('ev-overlay').classList.remove('open'); }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   KEYBOARD
+   ═══════════════════════════════════════════════════════════════════════════ */
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    if (document.getElementById('sus-overlay').classList.contains('open'))
+      return closeSusDirect();
+    if (document.getElementById('ev-overlay').classList.contains('open'))
+      return closeEvDirect();
+    go('home');
+  }
+});
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   INIT
+   ═══════════════════════════════════════════════════════════════════════════ */
+renderSuspects();
+renderTimeline();
+</script>
+</body>
+</html>
