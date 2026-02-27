@@ -350,175 +350,237 @@ body::after {
 .m-thumb:hover { filter: sepia(0); transform: scale(1.04); }
 
 /* ═══════════════════════════════════════════════════════════════════════════
-   TIMELINE SCREEN
+   TIMELINE SCREEN — vertical scrollable narrative
    ═══════════════════════════════════════════════════════════════════════════ */
 #timeline {
-  background: radial-gradient(ellipse at 50% 25%, #000810 0%, #080808 55%);
+  background: radial-gradient(ellipse at 50% 15%, #000810 0%, #080808 50%);
   padding-top: 56px;
+  align-items: stretch;
 }
 
+/* scrollable body */
+.tl-scroll {
+  flex: 1; overflow-y: auto;
+  padding: 0 0 40px;
+}
+.tl-scroll::-webkit-scrollbar { width: 5px; }
+.tl-scroll::-webkit-scrollbar-track { background: transparent; }
+.tl-scroll::-webkit-scrollbar-thumb { background: #1e1e1e; border-radius: 3px; }
+
+/* legend bar (sticky under topbar) */
 .tl-legend {
-  display: flex; gap: 16px; flex-wrap: wrap;
-  justify-content: center;
-  padding: 14px 20px 8px;
+  position: sticky; top: 0; z-index: 50;
+  display: flex; gap: 14px; flex-wrap: wrap; justify-content: center;
+  padding: 10px 20px 9px;
+  background: rgba(8,8,8,0.92);
+  border-bottom: 1px solid #141414;
+  backdrop-filter: blur(6px);
 }
 .leg {
   display: flex; align-items: center; gap: 5px;
   font-family: 'Share Tech Mono', monospace;
   font-size: 9px; color: #444; letter-spacing: 1px;
 }
-.leg-dot {
-  width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0;
+.leg-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+
+/* centered track with spine */
+.tl-track {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px 24px 0 56px;
+  position: relative;
 }
 
-.tl-cols {
-  display: flex; gap: 0; flex: 1;
-  padding: 0 16px 16px;
-  overflow: hidden;
+/* the vertical spine line */
+.tl-track::before {
+  content: '';
+  position: absolute;
+  left: 36px; top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent 0px, #1a1a1a 60px, #1a1a1a calc(100% - 60px), transparent);
 }
 
-.tl-day {
-  flex: 1; display: flex; flex-direction: column;
-  border-right: 1px solid #141414;
-  padding: 0 7px;
-  min-width: 0;
-}
-.tl-day:last-child { border-right: none; }
-
-.day-hdr {
-  text-align: center;
-  padding-bottom: 10px; margin-bottom: 8px;
-  border-bottom: 1px solid #222;
-}
-.day-hdr .day-name {
+/* ── day divider ── */
+.tl-day-div {
+  position: relative;
+  margin: 30px 0 18px -32px;
+  padding: 0 0 0 32px;
   font-family: 'Orbitron', monospace;
-  font-size: 14px; font-weight: 900;
+  display: flex; align-items: baseline; gap: 12px;
+}
+.tl-day-div::before {
+  content: '';
+  position: absolute;
+  left: -20px; right: -24px;
+  top: 50%; height: 1px;
+  background: #222;
+}
+.tl-day-name {
+  position: relative; z-index: 1;
+  font-size: 18px; font-weight: 900;
   color: var(--gold);
+  background: #080808;
+  padding-right: 10px;
 }
-.day-hdr .day-date {
+.tl-day-date {
+  position: relative; z-index: 1;
   font-family: 'Share Tech Mono', monospace;
-  font-size: 9px; letter-spacing: 2px; color: #444;
+  font-size: 10px; letter-spacing: 3px;
+  color: #444;
+  background: #080808;
+  padding-right: 8px;
 }
 
-.ev-stack {
-  display: flex; flex-direction: column;
-  gap: 5px; flex: 1;
-  overflow-y: auto;
-  padding-right: 3px;
-}
-.ev-stack::-webkit-scrollbar { width: 2px; }
-.ev-stack::-webkit-scrollbar-thumb { background: #222; }
-
-/* Event node */
-.ev {
-  background: #0c0c0c;
-  border: 1px solid #181818;
-  padding: 7px 9px;
-  cursor: pointer;
+/* ── event card (inline, readable without click) ── */
+.tl-ev {
   position: relative;
-  transition: border-color 0.15s, transform 0.12s;
-}
-.ev:hover {
-  border-color: var(--gold);
-  transform: translateX(2px);
+  margin-bottom: 14px;
+  padding: 14px 18px 14px 20px;
+  background: #0b0b0b;
+  border: 1px solid #161616;
+  border-left: 3px solid #333;
 }
 
-/* left accent bar */
-.ev::before {
-  content: ''; position: absolute;
-  left: 0; top: 0; bottom: 0; width: 3px;
-}
-.ev.t-contact::before    { background: var(--blue); }
-.ev.t-info::before       { background: var(--teal); }
-.ev.t-warning::before    { background: var(--yellow); }
-.ev.t-escalation::before { background: var(--orange); }
-.ev.t-banking::before    { background: var(--purple); }
-.ev.t-transfer::before   { background: var(--red); }
-.ev.t-appointment::before{ background: var(--green); }
-.ev.t-ghosted::before    { background: #444; }
+/* colored left border per type */
+.tl-ev.t-contact    { border-left-color: var(--blue); }
+.tl-ev.t-info       { border-left-color: var(--teal); }
+.tl-ev.t-warning    { border-left-color: var(--yellow); }
+.tl-ev.t-escalation { border-left-color: var(--orange); }
+.tl-ev.t-banking    { border-left-color: var(--purple); }
+.tl-ev.t-transfer   { border-left-color: var(--red); }
+.tl-ev.t-appointment{ border-left-color: var(--green); }
+.tl-ev.t-ghosted    { border-left-color: #444; }
 
-.ev-time {
+/* dot on the spine */
+.tl-ev::before {
+  content: '';
+  position: absolute;
+  left: -27px; top: 17px;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: #333;
+  border: 2px solid #0b0b0b;
+}
+.tl-ev.t-contact::before    { background: var(--blue); }
+.tl-ev.t-info::before       { background: var(--teal); }
+.tl-ev.t-warning::before    { background: var(--yellow); }
+.tl-ev.t-escalation::before { background: var(--orange); }
+.tl-ev.t-banking::before    { background: var(--purple); }
+.tl-ev.t-transfer::before   { background: var(--red); }
+.tl-ev.t-appointment::before{ background: var(--green); }
+.tl-ev.t-ghosted::before    { background: #444; }
+
+/* transfer events: special treatment */
+.tl-ev.t-transfer {
+  background: #0d0808;
+  border-color: #2a1414;
+  border-left-width: 4px;
+  box-shadow: 0 0 20px rgba(204,40,40,0.06);
+}
+/* ghosted events: dimmed */
+.tl-ev.t-ghosted { opacity: 0.75; }
+
+/* ── card inner elements ── */
+.tl-head {
+  display: flex; align-items: baseline; gap: 10px;
+  margin-bottom: 4px;
+}
+.tl-time {
   font-family: 'Share Tech Mono', monospace;
-  font-size: 9px; color: #444;
+  font-size: 10px; color: #444; flex-shrink: 0;
 }
-.ev-title {
-  font-size: 11.5px; font-weight: 700;
-  color: #bbb; line-height: 1.3;
-  margin-top: 1px;
+.tl-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 15px; font-weight: 700;
+  color: #c8c8c8; line-height: 1.3;
 }
-.ev.t-transfer .ev-title { color: var(--red); }
-.ev.t-ghosted .ev-title  { color: #888; }
-.ev-actor {
+.tl-ev.t-transfer .tl-title { color: var(--red); font-size: 16px; }
+.tl-ev.t-ghosted  .tl-title { color: #777; }
+
+.tl-actor {
   font-family: 'Share Tech Mono', monospace;
-  font-size: 8px; color: #333;
-  margin-top: 2px; letter-spacing: 0.5px;
+  font-size: 9px; color: #3a3a3a; letter-spacing: 1px;
+  margin-bottom: 8px;
 }
 
-/* ═══════════════════════════════════════════════════════════════════════════
-   EVENT MODAL
-   ═══════════════════════════════════════════════════════════════════════════ */
-.ev-modal {
-  background: #0c0c0c;
+.tl-desc {
+  font-size: 13px; color: #777; line-height: 1.7;
+}
+
+/* receipt download */
+.tl-receipt {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 10px; padding: 6px 12px;
+  background: rgba(204,40,40,0.08);
+  border: 1px solid rgba(204,40,40,0.2);
+  color: var(--red);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 9px; letter-spacing: 2px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.tl-receipt:hover { background: rgba(204,40,40,0.16); }
+
+/* ── screenshot ── */
+.tl-screenshot {
+  margin-top: 12px;
+  position: relative;
+  display: inline-block;
+}
+.tl-screenshot img {
+  max-width: 100%;
+  max-height: 360px;
+  border: 1px solid #1e1e1e;
+  display: block;
+  filter: brightness(0.95);
+}
+.tl-screenshot img.tall { max-height: 440px; }
+
+/* EN / FR toggle tab */
+.tl-lang {
+  position: absolute; top: 0; right: 0;
+  display: flex;
+}
+.tl-lang button {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 9px; letter-spacing: 1px;
+  padding: 3px 8px;
   border: 1px solid #2a2a2a;
-  max-width: 460px; width: 88vw;
-  padding: 26px 30px;
-  position: relative;
-  box-shadow: 0 0 50px rgba(0,0,0,0.7);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  background: #111; color: #444;
 }
+.tl-lang button.active {
+  background: var(--gold); color: #000;
+  border-color: var(--gold);
+}
+.tl-lang button:first-child { border-right: none; }
 
-.evm-type {
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 9px; letter-spacing: 3px;
-  text-transform: uppercase;
+/* ── end marker ── */
+.tl-end {
+  margin: 40px 0 20px -32px;
+  padding: 20px 0 0 32px;
+  border-top: 1px solid #222;
+  text-align: center;
+}
+.tl-end-amount {
+  font-family: 'Orbitron', monospace;
+  font-size: 22px; font-weight: 900;
+  color: var(--red);
   margin-bottom: 6px;
 }
-.evm-title {
-  font-family: 'Orbitron', monospace;
-  font-size: 14px; font-weight: 700;
-  color: #f0f0f0; margin-bottom: 5px;
-}
-.evm-datetime {
+.tl-end-label {
   font-family: 'Share Tech Mono', monospace;
-  font-size: 10px; color: #444; margin-bottom: 16px;
+  font-size: 10px; letter-spacing: 4px;
+  color: #444;
 }
-.evm-desc {
-  font-size: 13px; color: #888; line-height: 1.7;
-}
-.evm-actor {
-  margin-top: 14px;
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 10px; color: #444;
-}
-.evm-actor span { color: var(--gold); }
+
+/* (event modal removed — timeline is inline) */
 
 /* ═══════════════════════════════════════════════════════════════════════════
    UTILITIES
    ═══════════════════════════════════════════════════════════════════════════ */
 .hidden { display: none !important; }
-
-/* attachment icon on transfer events */
-.ev-attach {
-  position: absolute; top: 6px; right: 7px;
-  font-size: 13px; filter: grayscale(0.3);
-  pointer-events: none;
-}
-
-/* download link in event modal */
-.evm-download {
-  display: inline-flex; align-items: center; gap: 6px;
-  margin-top: 14px; padding: 7px 14px;
-  background: rgba(204,40,40,0.12);
-  border: 1px solid rgba(204,40,40,0.3);
-  color: var(--red);
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 10px; letter-spacing: 2px;
-  text-decoration: none;
-  transition: background 0.2s, border-color 0.2s;
-}
-.evm-download:hover {
-  background: rgba(204,40,40,0.22);
-  border-color: rgba(204,40,40,0.5);
-}
 
 /* document link in suspect modal */
 .m-doc-link {
@@ -580,8 +642,10 @@ body::after {
     <div style="width:60px"></div>
   </div>
 
-  <div class="tl-legend" id="tl-legend"></div>
-  <div class="tl-cols" id="tl-cols"></div>
+  <div class="tl-scroll">
+    <div class="tl-legend" id="tl-legend"></div>
+    <div class="tl-track" id="tl-track"></div>
+  </div>
 </div>
 
 <!-- ═══════════════════════ SUSPECT MODAL ═══════════════════════ -->
@@ -592,13 +656,7 @@ body::after {
   </div>
 </div>
 
-<!-- ═══════════════════════ EVENT MODAL ═══════════════════════ -->
-<div class="overlay" id="ev-overlay" onclick="closeEv(event)">
-  <div class="ev-modal" id="ev-modal-box">
-    <button class="m-close" onclick="closeEvDirect()">&times;</button>
-    <div id="ev-content"></div>
-  </div>
-</div>
+<!-- event modal removed — timeline is now inline -->
 
 <script>
 /* ═══════════════════════════════════════════════════════════════════════════
@@ -719,10 +777,12 @@ const EVENTS = [
     desc:"Etienne asks for ID and proof of income. Explicitly states deposit is paid at signing — no upfront payment needed." },
   { day:"sun", time:"21:17", type:"escalation", title:"Escalation #1 — €20",
     actor:"Etienne",
+    img:{ en:"ui-screenshots/1-escalation-20.png" },
     desc:"After receiving Yann's personal documents, Etienne introduces a €20 'seriousness' deposit to confirm the visit. Promised to be deducted from the security deposit." },
   // MON
   { day:"mon", time:"07:22", type:"escalation", title:"Escalation #2 — €220",
     actor:"Etienne",
+    img:{ en:"ui-screenshots/2-escalation-220.png" },
     desc:"The amount jumps to €220. Etienne claims €200 covers his travel costs and is refundable if Yann doesn't like the apartment. €20 is kept regardless." },
   { day:"mon", time:"08:51", type:"banking", title:"Beneficiary: Sondayeni",
     actor:"Etienne",
@@ -746,6 +806,8 @@ const EVENTS = [
     desc:"Etienne demands another €200 on top of the previous transfer. Only €50 remains for the meeting. Shares his WhatsApp for the first time: +33 757 839 183." },
   { day:"tue", time:"15:25", type:"warning", title:"Sylvain Blocked?",
     actor:"Sylvain",
+    img:{ en:"ui-screenshots/sylvain-stops-answer-blocks EN.jpg",
+          fr:"ui-screenshots/sylvain-stops-answer-blocks.jpg" },
     desc:"Messages now show single checkmark. Landline goes to voicemail. Calls from a different number fail too. Yann suspects he was blocked." },
   { day:"tue", time:"15:38", type:"warning", title:"Failed Calls to Etienne",
     actor:"Etienne",
@@ -763,6 +825,9 @@ const EVENTS = [
   // WED
   { day:"wed", time:"05:38", type:"warning", title:"\"Transfer Rejected\"",
     actor:"Etienne",
+    img:{ en:"ui-screenshots/4 false-claim-for-rejection EN.jpg",
+          fr:"ui-screenshots/4 false-claim-for-rejection.jpg" },
+    imgTall: true,
     desc:"Etienne falsely claims the bank returned the money to Yann's account. Sends fabricated screenshots as proof. Asks Yann to call his bank to 'fix it'. The money was never returned — this lie prompted Transfer #3." },
   { day:"wed", time:"07:03", type:"transfer", title:"TRANSFER #3 — €200",
     actor:"Yann → Sondayeni",
@@ -780,6 +845,9 @@ const EVENTS = [
     desc:"Yann arrives at 6 Rue Abbé Hurard, Sainte-Anne, with all his luggage. Waits outside in the heat." },
   { day:"wed", time:"14:00+", type:"ghosted", title:"NOBODY SHOWS UP",
     actor:"Etienne",
+    img:{ en:"ui-screenshots/5 etienne-never-shows-up-blocks EN.jpg",
+          fr:"ui-screenshots/5 etienne-never-shows-up-blocks.jpg" },
+    imgTall: true,
     desc:"The appointment time comes and goes. Etienne claims to be 'on the way' but the address doesn't match any residence. He eventually goes completely silent." },
   { day:"wed", time:"16:46", type:"ghosted", title:"Complaint Filed",
     actor:"Yann",
@@ -895,64 +963,92 @@ function closeSus(e) { if (e.target === e.currentTarget) closeSusDirect(); }
 function closeSusDirect() { document.getElementById('sus-overlay').classList.remove('open'); }
 
 /* ═══════════════════════════════════════════════════════════════════════════
-   RENDER TIMELINE
+   RENDER TIMELINE — vertical narrative
    ═══════════════════════════════════════════════════════════════════════════ */
 function renderTimeline() {
   // legend
-  const legEl = document.getElementById('tl-legend');
-  legEl.innerHTML = Object.entries(TYPE_META).map(([k,v]) =>
-    `<div class="leg"><div class="leg-dot" style="background:${v.color}"></div>${v.label}</div>`
-  ).join('');
+  document.getElementById('tl-legend').innerHTML =
+    Object.entries(TYPE_META).map(([k,v]) =>
+      `<div class="leg"><div class="leg-dot" style="background:${v.color}"></div>${v.label}</div>`
+    ).join('');
 
-  // columns
-  const cols = document.getElementById('tl-cols');
-  cols.innerHTML = DAYS.map(d => {
-    const evs = EVENTS.filter(e => e.day === d.key);
-    const cards = evs.map((e, i) => {
-      const idx = EVENTS.indexOf(e);
-      const clip = e.file ? '<div class="ev-attach">&#x1F4CE;</div>' : '';
-      return `
-        <div class="ev t-${e.type}" onclick="openEv(${idx})">
-          ${clip}
-          <div class="ev-time">${e.time}</div>
-          <div class="ev-title">${e.title}</div>
-          <div class="ev-actor">${e.actor}</div>
-        </div>`;
-    }).join('');
-    return `
-      <div class="tl-day">
-        <div class="day-hdr">
-          <div class="day-name">${d.name}</div>
-          <div class="day-date">${d.date}</div>
-        </div>
-        <div class="ev-stack">${cards}</div>
+  // build narrative
+  const track = document.getElementById('tl-track');
+  let html = '';
+  let currentDay = null;
+
+  EVENTS.forEach((e, idx) => {
+    // day divider
+    if (e.day !== currentDay) {
+      currentDay = e.day;
+      const d = DAYS.find(d => d.key === currentDay);
+      html += `<div class="tl-day-div">
+        <span class="tl-day-name">${d.name}</span>
+        <span class="tl-day-date">${d.date}</span>
       </div>`;
-  }).join('');
+    }
+
+    // screenshot block
+    let imgHtml = '';
+    if (e.img) {
+      const hasFr = !!e.img.fr;
+      const tallCls = e.imgTall ? ' tall' : '';
+      if (hasFr) {
+        imgHtml = `
+          <div class="tl-screenshot" id="ss-${idx}">
+            <div class="tl-lang">
+              <button class="active" onclick="swapLang(${idx},'en',event)">EN</button>
+              <button onclick="swapLang(${idx},'fr',event)">FR</button>
+            </div>
+            <img src="${e.img.en}" data-en="${e.img.en}" data-fr="${e.img.fr}" class="${tallCls}" alt="screenshot">
+          </div>`;
+      } else {
+        imgHtml = `
+          <div class="tl-screenshot">
+            <img src="${e.img.en}" class="${tallCls}" alt="screenshot">
+          </div>`;
+      }
+    }
+
+    // receipt download
+    let receipt = '';
+    if (e.file) {
+      const fname = e.file.split('/').pop();
+      receipt = `<a class="tl-receipt" href="${e.file}" target="_blank" download>${fname}</a>`;
+    }
+
+    html += `
+      <div class="tl-ev t-${e.type}">
+        <div class="tl-head">
+          <span class="tl-time">${e.time}</span>
+          <span class="tl-title">${e.title}</span>
+        </div>
+        <div class="tl-actor">${e.actor.toUpperCase()}</div>
+        <div class="tl-desc">${e.desc}</div>
+        ${receipt}
+        ${imgHtml}
+      </div>`;
+  });
+
+  // end marker
+  html += `
+    <div class="tl-end">
+      <div class="tl-end-amount">-&euro;800</div>
+      <div class="tl-end-label">TOTAL LOST</div>
+    </div>`;
+
+  track.innerHTML = html;
 }
 
-/* ═══════════════════════════════════════════════════════════════════════════
-   EVENT MODAL
-   ═══════════════════════════════════════════════════════════════════════════ */
-function openEv(i) {
-  const e = EVENTS[i];
-  const meta = TYPE_META[e.type];
-  const day = DAYS.find(d => d.key === e.day);
-
-  const dlLink = e.file
-    ? `<a class="evm-download" href="${e.file}" target="_blank" download>&#x1F4CE; DOWNLOAD RECEIPT</a>`
-    : '';
-  document.getElementById('ev-content').innerHTML = `
-    <div class="evm-type" style="color:${meta.color}">${meta.label}</div>
-    <div class="evm-title">${e.title}</div>
-    <div class="evm-datetime">${day.name} ${day.date} &middot; ${e.time}</div>
-    <div class="evm-desc">${e.desc}</div>
-    ${dlLink}
-    <div class="evm-actor">Actor: <span>${e.actor}</span></div>`;
-  document.getElementById('ev-overlay').classList.add('open');
+/* screenshot language toggle */
+function swapLang(idx, lang, evt) {
+  evt.stopPropagation();
+  const container = document.getElementById('ss-' + idx);
+  const img = container.querySelector('img');
+  img.src = img.dataset[lang];
+  container.querySelectorAll('.tl-lang button').forEach(b => b.classList.remove('active'));
+  evt.currentTarget.classList.add('active');
 }
-
-function closeEv(e) { if (e.target === e.currentTarget) closeEvDirect(); }
-function closeEvDirect() { document.getElementById('ev-overlay').classList.remove('open'); }
 
 /* ═══════════════════════════════════════════════════════════════════════════
    KEYBOARD
@@ -961,8 +1057,6 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
     if (document.getElementById('sus-overlay').classList.contains('open'))
       return closeSusDirect();
-    if (document.getElementById('ev-overlay').classList.contains('open'))
-      return closeEvDirect();
     go('home');
   }
 });
