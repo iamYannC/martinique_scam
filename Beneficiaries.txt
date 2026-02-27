@@ -1,0 +1,15 @@
+# Sondayeni Sanou
+IBAN
+FR76 1774 8019 8470 0732 7966 495
+BIC
+DBLKFR22XXX
+BANK NAME: Deblock
+https://deblock.com/fr-FR
+
+# Junior Yohan
+IBAN
+FR76 4061 8805 0500 0406 858 6984
+BIC
+BOUSFRPPXXX
+BANK NAME: BoursoBank
+https://www.boursobank.com/

@@ -1,0 +1,69 @@
+{
+  "people": [
+    {
+      "name": "Etienne Moulinat",
+      "role": "main scammer",
+      "id_card": {
+        "full_name": "MOULINAT Etienne Edouard Jean-Marie",
+        "birth_date": "19/10/1948",
+        "id_number": "150106102409",
+        "mrz": [
+          "IDFRAMOULINAT<<<<<<<<<<<<<<<<<061014",
+          "1501061024091ETIENNE<<EDOUA4810195M6"
+        ],
+        "document": "ID Etienne.pdf"
+      },
+      "contact": {
+        "phone": "+33 7 57 83 91 83",
+        "email": "etiennemoulinat4@gmail.com",
+        "photo": [
+          "Pictures/Etienne Whatsapp.jpg",
+          "Pictures/Etienne gmail.jpg"
+        ]
+      }
+    },
+    {
+      "name": "Reine Sabrina",
+      "role": "facebook",
+      "contact": {
+        "phone": null,
+        "email": null,
+        "photo": [
+          "Pictures/Reine Sabrina.jpg"
+        ]
+      }
+    },
+    {
+      "name": "Sylvain",
+      "role": "realtor",
+      "contact": {
+        "phone": "+33 7 73 97 29 07",
+        "email": null,
+        "photo": [
+          "Pictures/Sylvain.jpg"
+        ]
+      }
+    },
+    {
+      "name": "Sondayeni Sanou",
+      "role": "beneficiary",
+      "banking": {
+        "iban": "FR76 1774 8019 8470 0732 7966 495",
+        "bic": "DBLKFR22XXX",
+        "bank_name": "Deblock",
+        "bank_url": "https://deblock.com/fr-FR"
+      }
+    },
+    {
+      "name": "Junior Yohan",
+      "role": "beneficiary",
+      "extra": "Etienne's brother",
+      "banking": {
+        "iban": "FR76 4061 8805 0500 0406 8586 984",
+        "bic": "BOUSFRPPXXX",
+        "bank_name": "BoursoBank",
+        "bank_url": "https://www.boursobank.com/"
+      }
+    }
+  ]
+}
