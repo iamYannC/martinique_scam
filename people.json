@@ -20,7 +20,14 @@
           "Pictures/Etienne Whatsapp.jpg",
           "Pictures/Etienne gmail.jpg"
         ]
-      }
+      },
+      "attachments": [
+        {
+          "type": "evidence_screenshot",
+          "label": "Car-rental scam flow with Etienne phone number",
+          "path": "etienne-also-with-cars.jpeg"
+        }
+      ]
     },
     {
       "name": "Reine Sabrina",
@@ -52,7 +59,26 @@
         "bic": "DBLKFR22XXX",
         "bank_name": "Deblock",
         "bank_url": "https://deblock.com/fr-FR"
-      }
+      },
+      "business": {
+        "company_name": "SANOU SONDAYENI (DS SMART)",
+        "siren": "942 237 116",
+        "status": "Active",
+        "address": "19 Boulevard Mendes France, 44700 Orvault",
+        "activity": "Nettoyage courant des batiments (Building routine cleaning)",
+        "employees": "0 salarie (2026 data)",
+        "created": "20/03/2025",
+        "director": "Sanou SONDAYENI",
+        "rne_update": "28/02/2026",
+        "insee_update": "27/02/2026"
+      },
+      "attachments": [
+        {
+          "type": "business_screenshot",
+          "label": "Business card screenshot (not a personal photo)",
+          "path": "SANOU small buisness from alexandra bzh.jpeg"
+        }
+      ]
     },
     {
       "name": "Junior Yohan",
@@ -64,6 +90,29 @@
         "bank_name": "BoursoBank",
         "bank_url": "https://www.boursobank.com/"
       }
+    },
+    {
+      "name": "Marie-Louise Eliane",
+      "role": "parallel actor",
+      "contact": {
+        "phone": null,
+        "email": null,
+        "photo": [
+          "Marie-Louise Eliane SC.jpeg"
+        ]
+      },
+      "attachments": [
+        {
+          "type": "screenshot",
+          "label": "Etienne specifies money amount",
+          "path": "Marie-Louise Eliane/etienne specifies amount 450.jpg"
+        },
+        {
+          "type": "screenshot",
+          "label": "Marie chat redirecting to Etienne email and phone",
+          "path": "Marie-Louise Eliane/marie-another-chat-etiennemail.jpeg"
+        }
+      ]
     }
   ]
 }
