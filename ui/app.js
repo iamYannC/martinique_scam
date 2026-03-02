@@ -15,7 +15,7 @@ if (!THEMES.includes(currentTheme)) currentTheme = "dark";
    ========================================================================== */
 const UI_TEXT = {
   en: {
-    pageTitle: "Grand Theft Appartment: Martinique",
+    pageTitle: "Grand Theft Apartment: Martinique",
     homeSub: "TL;DR I got scammed for EUR 800",
     menuSuspects: "Suspects",
     menuTimeline: "Timeline",
@@ -23,7 +23,7 @@ const UI_TEXT = {
     timelineTitle: "Case Timeline",
     back: "\u2190 BACK",
     timelineIntro:
-      "In February 2026, I was urgently looking for accommodation in Martinique. Under pressure to find somewhere quickly, I responded to what seemed like a legitimate Facebook rental listing and let that urgency cloud my judgment. What followed was five days of coordinated manipulation. I transferred EUR 800 across four payments, believing I was about to sign a lease and collect keys. Instead, I stood in front of a false address with no apartment and no money.",
+      "In February 2026, I was urgently looking for accommodation in Martinique. Under pressure to find somewhere quickly, I responded to what seemed like a legitimate Facebook rental listing. What followed was five days of a sophisticated sting operation. I transferred EUR 800 across four payments, believing I was about to sign a lease and collect keys. Instead, I stood in front of a false address with no apartment and no money. FML.",
     clickToView: "CLICK TO VIEW",
     suspectFile: "SUSPECT FILE",
     profile: "Profile",
@@ -47,7 +47,7 @@ const UI_TEXT = {
     timelineTitle: "Chronologie de l'affaire",
     back: "\u2190 RETOUR",
     timelineIntro:
-      "En fevrier 2026, je cherchais en urgence un logement en Martinique. Sous pression, j'ai repondu a une annonce Facebook qui paraissait legitime, et cette urgence a brouille mon jugement. Ce qui a suivi: cinq jours de manipulation coordonnee. J'ai transfere 800 EUR en quatre paiements, en croyant signer un bail et recuperer les cles. Au final, je me suis retrouve devant une fausse adresse, sans appartement et sans argent.",
+      "En février 2026, je cherchais un logement en urgence en Martinique. Sous la pression de trouver rapidement, j'ai répondu à une annonce Facebook qui semblait légitime. Ce qui a suivi fut cinq jours d'une escroquerie sophistiquée. J'ai transféré 800 euros en quatre paiements, persuadé que j'étais sur le point de signer un bail et de récupérer les clés. Au lieu de ça, je me suis retrouvé planté devant une fausse adresse, sans appartement et sans argent. VDM.",
     clickToView: "CLIQUER POUR OUVRIR",
     suspectFile: "DOSSIER SUSPECT",
     profile: "Profil",
@@ -74,15 +74,15 @@ const SUSPECTS = [
     roleCls: "scammer",
     stars: 5,
     photos: ["../Pictures/Etienne Whatsapp.jpg", "../Pictures/Etienne gmail.jpg"],
-    docs: ["../ID Etienne.jpg"],
+    docs: ["../ID Etienne.jpg", "../etienne-also-with-cars.jpeg"],
     snippet: {
       en: "Orchestrated the entire scam over email.",
       fr: "A orchestre toute l'arnaque par email.",
     },
     money: { en: "Received EUR 800 total", fr: "A recu 800 EUR au total" },
     desc: {
-      en: "Primary orchestrator. Posed as a landlord renting a Sainte-Anne studio. Gradually escalated demands from EUR 20 to EUR 800 across 5 days via 4 wire transfers to two beneficiaries. Never completed a meaningful phone call. Provided a non-existent contract address. Never showed up to the appointment.",
-      fr: "Organisateur principal. S'est fait passer pour un proprietaire louant un studio a Sainte-Anne. A fait monter les demandes de 20 EUR a 800 EUR sur 5 jours, via 4 virements vers deux beneficiaires. Aucun appel utile n'a abouti. A fourni une adresse de contrat inexistante. Ne s'est jamais presente au rendez-vous.",
+      en: "Primary orchestrator. Posed as a landlord renting a Sainte-Anne studio. Gradually escalated demands from EUR 20 to EUR 800 across 5 days via 4 wire transfers to two beneficiaries. Never completed a meaningful phone call. Provided a non-existent contract address. Never showed up to the appointment. Additional evidence also shows the same actor using similar pressure tactics in a car-rental scam flow (Peugeot 107 mention).",
+      fr: "Organisateur principal. S'est fait passer pour un proprietaire louant un studio a Sainte-Anne. A fait monter les demandes de 20 EUR a 800 EUR sur 5 jours, via 4 virements vers deux beneficiaires. Aucun appel utile n'a abouti. A fourni une adresse de contrat inexistante. Ne s'est jamais presente au rendez-vous. Une preuve supplementaire montre aussi le meme acteur dans un schema de location de voiture (mention Peugeot 107), avec des demandes d'argent comparables.",
     },
     sections: [
       {
@@ -253,7 +253,10 @@ const SUSPECTS = [
     roleCls: "witness",
     stars: 3,
     photos: ["../Marie-Louise Eliane SC.jpeg"],
-    docs: ["../Marie-Louise Eliane/etienne specifies amount 450.jpg"],
+    docs: [
+      "../Marie-Louise Eliane/etienne specifies amount 450.jpg",
+      "../Marie-Louise Eliane/marie-another-chat-etiennemail.jpeg",
+    ],
     snippet: {
       en: "New name tied to the same payment-demand script.",
       fr: "Nouveau nom lie au meme script de demande d'argent.",

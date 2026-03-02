@@ -20,7 +20,14 @@
           "Pictures/Etienne Whatsapp.jpg",
           "Pictures/Etienne gmail.jpg"
         ]
-      }
+      },
+      "attachments": [
+        {
+          "type": "evidence_screenshot",
+          "label": "Car-rental scam flow with Etienne phone number",
+          "path": "etienne-also-with-cars.jpeg"
+        }
+      ]
     },
     {
       "name": "Reine Sabrina",
@@ -99,6 +106,11 @@
           "type": "screenshot",
           "label": "Etienne specifies money amount",
           "path": "Marie-Louise Eliane/etienne specifies amount 450.jpg"
+        },
+        {
+          "type": "screenshot",
+          "label": "Marie chat redirecting to Etienne email and phone",
+          "path": "Marie-Louise Eliane/marie-another-chat-etiennemail.jpeg"
         }
       ]
     }
