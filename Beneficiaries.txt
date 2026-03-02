@@ -5,6 +5,21 @@ BIC
 DBLKFR22XXX
 BANK NAME: Deblock
 https://deblock.com/fr-FR
+support@deblock.com
+complaints@deblock.com
+Company: SANOU SONDAYENI (DS SMART)
+SIREN: 942 237 116
+Status: Active
+Address: 19 Boulevard Mendès France, 44700 Orvault
+Activity: Nettoyage courant des bâtiments (Building routine cleaning)
+Employees: 0 salarié (2026 data)
+Created: 20/03/2025
+Director: Sanou SONDAYENI
+Data sources:
+
+RNE update: 28/02/2026
+INSEE update: 27/02/2026
+
 
 # Junior Yohan
 IBAN

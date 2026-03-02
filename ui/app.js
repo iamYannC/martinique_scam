@@ -135,7 +135,7 @@ const EVENTS = [
   { day:"mon", time:"12:03", type:"transfer", title:"TRANSFER #1 \u2014 \u20ac200",
     actor:"Yann \u2192 Sondayeni",
     running: "-\u20ac200",
-    receipt:["../Transfers/1st wise 200-0.jpg","../Transfers/1st wise 200-1.jpg"],
+    receipt:["../Transfers/1st wise 200.jpg"],
     desc:"\u20ac200 sent from Wise to Sondayeni Sanou. First real money lost. Screenshot shared as proof. Running total: \u20ac200." },
   { day:"mon", time:"13:15", type:"appointment", title:"Meeting Confirmed",
     actor:"Etienne + Sylvain",
@@ -393,16 +393,7 @@ function renderTimeline() {
       <div class="tl-end-label">TOTAL LOST</div>
     </div>`;
 
-  // busted card
-  html += `
-    <div class="tl-busted">
-      <div class="tl-busted-text">BUSTED</div>
-      <div class="tl-busted-sub">\u20ac800 \u00b7 SAINTE-ANNE \u00b7 MARTINIQUE</div>
-    </div>`;
-
-  track.innerHTML = html;
-}
-
+ 
 /* screenshot language toggle */
 function swapLang(idx, lang, evt) {
   evt.stopPropagation();
