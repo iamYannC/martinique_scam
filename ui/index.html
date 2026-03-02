@@ -11,19 +11,27 @@
 
 <body>
 
+<div class="global-controls" aria-label="Display controls">
+  <div class="lang-switch" id="lang-switch" role="group" aria-label="Language switch">
+    <button class="lang-btn" type="button" data-lang="en">EN</button>
+    <button class="lang-btn" type="button" data-lang="fr">FR</button>
+  </div>
+  <button class="theme-btn" id="theme-toggle" type="button"></button>
+</div>
+
 <!-- ═══════════════════════ HOME ═══════════════════════ -->
 <div class="screen active" id="home">
   <img src="gta.png" class="home-logo" alt="Grand Theft Appartment: Martinique">
-  <h1 class="home-sub">TL;DR i got scammed for 800 euros</h1>
+  <h1 class="home-sub" id="home-sub">TL;DR i got scammed for 800 euros</h1>
   <div class="home-menu">
     <div class="menu-btn" onclick="go('suspects')">
       <img src="wanted.png" alt="Suspects">
-      <span>Suspects</span>
+      <span id="menu-suspects">Suspects</span>
     </div>
     <div class="menu-btn" onclick="go('timeline')">
       <img src="timeline.png" alt="Timeline"
            style="border-radius:12px; background:#111; padding:6px;">
-      <span>Timeline</span>
+      <span id="menu-timeline">Timeline</span>
     </div>
   </div>
 </div>
@@ -31,9 +39,9 @@
 <!-- ═══════════════════════ SUSPECTS ═══════════════════════ -->
 <div class="screen" id="suspects">
   <div class="topbar">
-    <button class="back-btn" onclick="go('home')">&larr; BACK</button>
+    <button class="back-btn" onclick="go('home')" data-i18n="back">&larr; BACK</button>
     <div class="topbar-title">
-      <img src="wanted.png" class="topbar-icon" alt="">Suspect Database
+      <img src="wanted.png" class="topbar-icon" alt=""><span id="suspects-title">Suspect Database</span>
     </div>
     <div style="width:60px"></div>
   </div>
@@ -43,10 +51,10 @@
 <!-- ═══════════════════════ TIMELINE ═══════════════════════ -->
 <div class="screen" id="timeline">
   <div class="topbar">
-    <button class="back-btn" onclick="go('home')">&larr; BACK</button>
+    <button class="back-btn" onclick="go('home')" data-i18n="back">&larr; BACK</button>
     <div class="topbar-title">
       <img src="timeline.png" class="topbar-icon"
-           style="border-radius:6px; background:#181818; padding:2px;" alt="">Case Timeline
+           style="border-radius:6px; background:#181818; padding:2px;" alt=""><span id="timeline-title">Case Timeline</span>
     </div>
     <div style="width:60px"></div>
   </div>
@@ -54,7 +62,7 @@
   <div class="tl-scroll">
     <div class="tl-legend" id="tl-legend"></div>
     <div class="tl-intro">
-      <p>In February 2026, I was urgently looking for accommodation in Martinique. Under pressure to find somewhere quickly, I responded to what seemed like a legitimate Facebook rental listing — and I let that desperation cloud my judgment. What followed was five days of calculated manipulation by a coordinated group who specifically target people in that situation. I transferred €800 across four payments, genuinely believing I was about to sign a lease and collect the keys. Instead, I found myself standing in front of a false address, luggage at my feet, in the midday heat — with no apartment and no money.</p>
+      <p id="timeline-intro">In February 2026, I was urgently looking for accommodation in Martinique. Under pressure to find somewhere quickly, I responded to what seemed like a legitimate Facebook rental listing - and I let that desperation cloud my judgment. What followed was five days of calculated manipulation by a coordinated group who specifically target people in that situation. I transferred EUR 800 across four payments, genuinely believing I was about to sign a lease and collect the keys. Instead, I found myself standing in front of a false address, luggage at my feet, in the midday heat - with no apartment and no money.</p>
     </div>
     <div class="tl-track" id="tl-track"></div>
   </div>
