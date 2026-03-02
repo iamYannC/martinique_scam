@@ -393,7 +393,9 @@ function renderTimeline() {
       <div class="tl-end-label">TOTAL LOST</div>
     </div>`;
 
- 
+  track.innerHTML = html;
+}
+
 /* screenshot language toggle */
 function swapLang(idx, lang, evt) {
   evt.stopPropagation();
