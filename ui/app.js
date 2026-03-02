@@ -251,7 +251,7 @@ const SUSPECTS = [
     role: { en: "Parallel Actor", fr: "Actrice parallele" },
     roleCls: "witness",
     stars: 3,
-    photos: ["../Marie-Louise Eliane SC.jpeg"],
+    photos: ["../Marie-Louise Eliane/Marie and husband Allan Dionny.jpg"],
     docs: [
       "../Marie-Louise Eliane/etienne specifies amount 450.jpg",
       "../Marie-Louise Eliane/marie-another-chat-etiennemail.jpeg",
@@ -261,8 +261,8 @@ const SUSPECTS = [
       fr: "Nouveau nom lie au meme script de demande d'argent.",
     },
     desc: {
-      en: "After the complaint, another participant shared a Messenger screenshot showing the same operating pattern and wording, under the name Marie-Louise Eliane. This expands the actor map beyond the original chain.",
-      fr: "Apres la plainte, une autre personne a partage une capture Messenger montrant le meme mode operatoire et la meme formulation, sous le nom de Marie-Louise Eliane. Cela elargit la cartographie des acteurs au-dela de la chaine initiale.",
+      en: "Another participant shared a Messenger screenshot showing the same operating pattern and wording, under the name Marie-Louise Eliane.",
+      fr: "Une autre personne a partage une capture Messenger montrant le meme mode operatoire et la meme formulation, sous le nom de Marie-Louise Eliane.",
     },
     sections: [
       {
