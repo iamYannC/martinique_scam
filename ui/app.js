@@ -98,7 +98,6 @@ const SUSPECTS = [
           { k: { en: "Full Name", fr: "Nom complet" }, v: "MOULINAT Etienne Edouard Jean-Marie" },
           { k: { en: "Birth Date", fr: "Date de naissance" }, v: "19/10/1948" },
           { k: { en: "ID Number", fr: "Numero de piece" }, v: "150106102409" },
-          { k: { en: "Document", fr: "Document" }, v: "ID Etienne.pdf" },
         ],
         mrz: ["IDFRAMOULINAT<<<<<<<<<<<<<<<<<061014", "1501061024091ETIENNE<<EDOUA4810195M6"],
       },
@@ -273,8 +272,8 @@ const SUSPECTS = [
           {
             k: { en: "Evidence", fr: "Preuve" },
             v: {
-              en: "Screenshot where money amount is specified",
-              fr: "Capture ou le montant a payer est precise",
+              en: "Screenshots from multiple conversations",
+              fr: "Captures de plusieurs conversations",
             },
           },
         ],
