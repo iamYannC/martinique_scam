@@ -109,6 +109,7 @@ const SUSPECTS = [
     roleCls: "facebook",
     stars: 2,
     photos: ["../Pictures/Reine Sabrina.jpg"],
+    docs: ["ui-screenshots/reine-conv-1.png", "ui-screenshots/reine-conv-2.png"],
     snippet: {
       en: "Posted the rental ad. Entry point of the scam.",
       fr: "A publie l'annonce. Point d'entree de l'arnaque.",
