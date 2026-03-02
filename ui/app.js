@@ -320,7 +320,7 @@ const EVENTS = [
     title: { en: "WhatsApp: Sylvain", fr: "WhatsApp : Sylvain" },
     actor: "Sylvain",
     img: { en: "../Pictures/Sylvain.jpg" },
-    imgTall: true,
+    imgRound: true,
     desc: {
       en: "Yann contacts the number on WhatsApp. Sylvain asks him to write to the email address.",
       fr: "Yann contacte le numero sur WhatsApp. Sylvain lui demande d'ecrire a l'adresse email.",
@@ -877,7 +877,7 @@ function renderTimeline() {
     let imgHtml = "";
     if (e.img) {
       const hasFr = !!e.img.fr;
-      const tallCls = e.imgTall ? " tall" : "";
+      const imgCls = [e.imgTall ? "tall" : "", e.imgRound ? "round" : ""].filter(Boolean).join(" ");
 
       if (hasFr) {
         const imageLang = currentLang === "fr" ? "fr" : "en";
@@ -887,12 +887,12 @@ function renderTimeline() {
               <button class="${imageLang === "en" ? "active" : ""}" onclick="swapLang(${idx},'en',event)">EN</button>
               <button class="${imageLang === "fr" ? "active" : ""}" onclick="swapLang(${idx},'fr',event)">FR</button>
             </div>
-            <img src="${e.img[imageLang]}" data-en="${e.img.en}" data-fr="${e.img.fr}" class="${tallCls}" alt="${text("screenshotAlt")}">
+            <img src="${e.img[imageLang]}" data-en="${e.img.en}" data-fr="${e.img.fr}" class="${imgCls}" alt="${text("screenshotAlt")}">
           </div>`;
       } else {
         imgHtml = `
           <div class="tl-screenshot">
-            <img src="${e.img.en}" class="${tallCls}" alt="${text("screenshotAlt")}">
+            <img src="${e.img.en}" class="${imgCls}" alt="${text("screenshotAlt")}">
           </div>`;
       }
     }
