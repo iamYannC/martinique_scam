@@ -66,7 +66,7 @@ body::after {
 
 .home-sub {
   font-family: 'Orbitron', monospace;
-  font-size: 10px; letter-spacing: 7px;
+  font-size: 15px; letter-spacing: 7px;
   color: rgba(212,160,32,0.4);
   text-transform: uppercase;
   margin-bottom: 60px;
@@ -649,7 +649,7 @@ body::after {
 
   /* home */
   .home-logo { width: min(220px, 55vw); }
-  .home-sub { font-size: 8px; letter-spacing: 4px; margin-bottom: 40px; }
+  .home-sub { font-size: 11px; letter-spacing: 4px; margin-bottom: 40px; }
   .home-menu { gap: 40px; }
   .menu-btn img { height: min(140px, 20vh); }
   .menu-btn span { font-size: 9px; letter-spacing: 3px; }
@@ -699,7 +699,7 @@ body::after {
    ═══════════════════════════════════════════════════════════════════════════ */
 @media (max-width: 480px) {
   .home-logo { width: min(180px, 60vw); }
-  .home-sub { font-size: 7px; letter-spacing: 3px; margin-bottom: 32px; }
+  .home-sub { font-size: 9px; letter-spacing: 3px; margin-bottom: 32px; }
   .home-menu { flex-direction: column; gap: 28px; }
   .menu-btn img { height: min(120px, 18vh); }
 
