@@ -319,6 +319,8 @@ const EVENTS = [
     type: "contact",
     title: { en: "WhatsApp: Sylvain", fr: "WhatsApp : Sylvain" },
     actor: "Sylvain",
+    img: { en: "../Pictures/Sylvain.jpg" },
+    imgTall: true,
     desc: {
       en: "Yann contacts the number on WhatsApp. Sylvain asks him to write to the email address.",
       fr: "Yann contacte le numero sur WhatsApp. Sylvain lui demande d'ecrire a l'adresse email.",
