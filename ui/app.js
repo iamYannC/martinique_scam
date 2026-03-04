@@ -6,6 +6,9 @@ const THEMES = ["dark", "light"];
 
 let currentLang = localStorage.getItem("lang") || "en";
 let currentTheme = localStorage.getItem("theme") || "dark";
+const GOFUNDME_URL =
+  "https://www.gofundme.com/f/grand-theft-apartment-martinique/cl/o?utm_campaign=fp_sharesheet&utm_content=amp20_t2&utm_medium=customer&utm_source=copy_link&lang=en_US&attribution_id=sl%3Ac6e6a665-7487-4a68-a45f-b40a6f2a7e70&ts=1772662358";
+const SUPPORT_MODAL_SHOWN_KEY = "supportModalShownV1";
 
 if (!LANGS.includes(currentLang)) currentLang = "en";
 if (!THEMES.includes(currentTheme)) currentTheme = "dark";
@@ -37,6 +40,14 @@ const UI_TEXT = {
     transferReceiptAlt: "transfer receipt",
     docPreviewAlt: "document preview",
     photoAlt: "photo",
+    supportKicker: "Support the case",
+    supportTitle: "Help me recover the EUR 800 loss",
+    supportBody:
+      "If this story helped or you want to support the recovery effort, this GoFundMe link is open.",
+    supportOpen: "Open GoFundMe",
+    supportLater: "Maybe later",
+    supportFooterText: "Support this case:",
+    supportFooterCta: "Donate",
   },
   fr: {
     pageTitle: "Grand Theft Appartment : Martinique",
@@ -61,6 +72,14 @@ const UI_TEXT = {
     transferReceiptAlt: "recu de virement",
     docPreviewAlt: "apercu du document",
     photoAlt: "photo",
+    supportKicker: "Soutenir l'affaire",
+    supportTitle: "Aidez-moi a recuperer les 800 EUR perdus",
+    supportBody:
+      "Si cette histoire vous parle ou si vous souhaitez soutenir l'effort de recuperation, ce lien GoFundMe est ouvert.",
+    supportOpen: "Ouvrir GoFundMe",
+    supportLater: "Plus tard",
+    supportFooterText: "Soutenir cette affaire :",
+    supportFooterCta: "Faire un don",
   },
 };
 
@@ -135,6 +154,7 @@ const SUSPECTS = [
     roleCls: "realtor",
     stars: 3,
     photos: ["../Pictures/Sylvain.jpg"],
+docs: ["ui-screenshots\sylvain-stops-answer-blocks.jpg", "ui-screenshots\sylvain-stops-answer-blocks EN.jpg"],
     snippet: {
       en: "WhatsApp intermediary. Never answered calls.",
       fr: "Intermediaire WhatsApp. N'a jamais repondu aux appels.",
@@ -154,12 +174,46 @@ const SUSPECTS = [
     ],
   },
   {
+    name: "Marie-Louise Eliane",
+    role: { en: "Parallel Actor", fr: "Actrice parallele" },
+    roleCls: "witness",
+    stars: 3,
+    photos: ["../Marie-Louise Eliane/Marie and husband Allan Dionny.jpg"],
+    docs: [
+      "../Marie-Louise Eliane/etienne specifies amount 450.jpg",
+      "../Marie-Louise Eliane/marie-another-chat-etiennemail.jpeg",
+    ],
+    snippet: {
+      en: "New name tied to the same payment-demand script.",
+      fr: "Nouveau nom lie au meme script de demande d'argent.",
+    },
+    desc: {
+      en: "Another participant shared a Messenger screenshot showing the same operating pattern and wording, under the name Marie-Louise Eliane.",
+      fr: "Une autre personne a partage une capture Messenger montrant le meme mode operatoire et la meme formulation, sous le nom de Marie-Louise Eliane.",
+    },
+    sections: [
+      {
+        label: { en: "Context", fr: "Contexte" },
+        rows: [
+          { k: { en: "Platform", fr: "Plateforme" }, v: "Facebook Messenger" },
+          {
+            k: { en: "Evidence", fr: "Preuve" },
+            v: {
+              en: "Screenshots from multiple conversations",
+              fr: "Captures de plusieurs conversations",
+            },
+          },
+        ],
+      },
+    ],
+  },
+  {
     name: "Sondayeni Sanou",
     role: { en: "Beneficiary", fr: "Beneficiaire" },
     roleCls: "beneficiary",
     stars: 4,
     photos: [],
-    docs: ["../SANOU small buisness from alexandra bzh.jpeg"],
+    docs: ["../SANOU small buisness from alex.jpeg"],
     snippet: {
       en: "Money mule #1. Received EUR 600.",
       fr: "Mule financiere #1. A recu 600 EUR.",
@@ -242,40 +296,6 @@ const SUSPECTS = [
             k: { en: "Bank URL", fr: "URL banque" },
             v: "boursobank.com",
             link: "https://www.boursobank.com/",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    name: "Marie-Louise Eliane",
-    role: { en: "Parallel Actor", fr: "Actrice parallele" },
-    roleCls: "witness",
-    stars: 3,
-    photos: ["../Marie-Louise Eliane/Marie and husband Allan Dionny.jpg"],
-    docs: [
-      "../Marie-Louise Eliane/etienne specifies amount 450.jpg",
-      "../Marie-Louise Eliane/marie-another-chat-etiennemail.jpeg",
-    ],
-    snippet: {
-      en: "New name tied to the same payment-demand script.",
-      fr: "Nouveau nom lie au meme script de demande d'argent.",
-    },
-    desc: {
-      en: "Another participant shared a Messenger screenshot showing the same operating pattern and wording, under the name Marie-Louise Eliane.",
-      fr: "Une autre personne a partage une capture Messenger montrant le meme mode operatoire et la meme formulation, sous le nom de Marie-Louise Eliane.",
-    },
-    sections: [
-      {
-        label: { en: "Context", fr: "Contexte" },
-        rows: [
-          { k: { en: "Platform", fr: "Plateforme" }, v: "Facebook Messenger" },
-          {
-            k: { en: "Evidence", fr: "Preuve" },
-            v: {
-              en: "Screenshots from multiple conversations",
-              fr: "Captures de plusieurs conversations",
-            },
           },
         ],
       },
@@ -733,6 +753,67 @@ function renderStaticText() {
   });
 
   setTheme(currentTheme, false);
+  renderSupportText();
+}
+
+/* ==========================================================================
+   SUPPORT CTA (GOFUNDME)
+   ========================================================================== */
+function renderSupportText() {
+  const footerText = document.getElementById("gfm-footer-text");
+  if (footerText) footerText.textContent = text("supportFooterText");
+
+  const footerLink = document.getElementById("gfm-footer-link");
+  if (footerLink) {
+    footerLink.textContent = text("supportFooterCta");
+    footerLink.href = GOFUNDME_URL;
+  }
+
+  const modalLink = document.getElementById("gfm-modal-link");
+  if (modalLink) {
+    modalLink.textContent = text("supportOpen");
+    modalLink.href = GOFUNDME_URL;
+  }
+
+  const modalLater = document.getElementById("gfm-modal-later");
+  if (modalLater) modalLater.textContent = text("supportLater");
+
+  const modalKicker = document.getElementById("gfm-kicker");
+  if (modalKicker) modalKicker.textContent = text("supportKicker");
+
+  const modalTitle = document.getElementById("gfm-title");
+  if (modalTitle) modalTitle.textContent = text("supportTitle");
+
+  const modalText = document.getElementById("gfm-text");
+  if (modalText) modalText.textContent = text("supportBody");
+}
+
+function openSupportModal() {
+  const overlay = document.getElementById("gfm-overlay");
+  if (!overlay) return;
+  overlay.classList.add("open");
+}
+
+function closeSupportModal(e) {
+  if (e.target === e.currentTarget) closeSupportModalDirect();
+}
+
+function closeSupportModalDirect() {
+  const overlay = document.getElementById("gfm-overlay");
+  if (overlay) overlay.classList.remove("open");
+}
+
+function initSupportModal() {
+  renderSupportText();
+
+  const seen = localStorage.getItem(SUPPORT_MODAL_SHOWN_KEY) === "1";
+  if (seen) return;
+
+  const delayMs = 5000 + Math.floor(Math.random() * 5001);
+  window.setTimeout(() => {
+    openSupportModal();
+    localStorage.setItem(SUPPORT_MODAL_SHOWN_KEY, "1");
+  }, delayMs);
 }
 
 /* ==========================================================================
@@ -968,6 +1049,9 @@ function swapLang(idx, lang, evt) {
    ========================================================================== */
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
+    if (document.getElementById("gfm-overlay").classList.contains("open")) {
+      return closeSupportModalDirect();
+    }
     if (document.getElementById("sus-overlay").classList.contains("open")) {
       return closeSusDirect();
     }
@@ -981,3 +1065,4 @@ document.addEventListener("keydown", (e) => {
 bindControls();
 setTheme(currentTheme, false);
 setLanguage(currentLang, false);
+initSupportModal();
