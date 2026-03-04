@@ -76,6 +76,25 @@
   </div>
 </div>
 
+<!-- ═══════════════════════ SUPPORT MODAL + FOOTER ═══════════════════════ -->
+<div class="gfm-overlay" id="gfm-overlay" onclick="closeSupportModal(event)">
+  <div class="gfm-modal" role="dialog" aria-modal="true" aria-labelledby="gfm-title">
+    <button class="gfm-close" type="button" aria-label="Close" onclick="closeSupportModalDirect()">&times;</button>
+    <p class="gfm-kicker" id="gfm-kicker"></p>
+    <h2 class="gfm-title" id="gfm-title"></h2>
+    <p class="gfm-text" id="gfm-text"></p>
+    <div class="gfm-actions">
+      <a class="gfm-primary" id="gfm-modal-link" href="#" target="_blank" rel="noopener noreferrer"></a>
+      <button class="gfm-secondary" id="gfm-modal-later" type="button" onclick="closeSupportModalDirect()"></button>
+    </div>
+  </div>
+</div>
+
+<footer class="gfm-footer" aria-label="Support link">
+  <span class="gfm-footer-text" id="gfm-footer-text"></span>
+  <a class="gfm-footer-link" id="gfm-footer-link" href="#" target="_blank" rel="noopener noreferrer"></a>
+</footer>
+
 <script src="app.js"></script>
 </body>
 </html>
