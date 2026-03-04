@@ -154,7 +154,7 @@ const SUSPECTS = [
     roleCls: "realtor",
     stars: 3,
     photos: ["../Pictures/Sylvain.jpg"],
-docs: ["ui-screenshots\sylvain-stops-answer-blocks.jpg", "ui-screenshots\sylvain-stops-answer-blocks EN.jpg"],
+docs: ["ui-screenshots/sylvain-stops-answer-blocks.jpg", "ui-screenshots/sylvain-stops-answer-blocks EN.jpg"],
     snippet: {
       en: "WhatsApp intermediary. Never answered calls.",
       fr: "Intermediaire WhatsApp. N'a jamais repondu aux appels.",
